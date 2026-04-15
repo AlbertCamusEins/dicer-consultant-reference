@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://wa73aqclx6ei"
+valid=false
+
+[deps]
+
+source_file="res://CsvData/traits.csv"
+
+[params]
+
+compress=true
+delimiter=0

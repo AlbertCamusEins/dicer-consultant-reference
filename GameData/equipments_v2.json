@@ -1,0 +1,119 @@
+{
+  "equipments": {
+	"eq001": {
+	  "equipment_name": "sword",
+	  "texture_path": "res://Assets/dice-sword.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 0,
+	  "defense_bonus": 0,
+	  "traits": [
+		"eqt005"
+	  ],
+	  "trait_descs": [
+		"Face up: gain 1 Ready. Ready: while Sword is face up, after an ally spell resolves, deal 4 damage to the front enemy, then consume Ready."
+	  ],
+	  "display_name_key": "equipment.eq001.name",
+	  "trait_desc_keys": [
+		"equipment.eq001.trait_desc.0"
+	  ]
+	},
+	"eq002": {
+	  "equipment_name": "shield",
+	  "texture_path": "res://Assets/dice-shield.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 0,
+	  "defense_bonus": 0,
+	  "traits": [
+		"eqt002"
+	  ],
+	  "trait_descs": [
+		"When thrown, give 2 shield to the front ally."
+	  ],
+	  "display_name_key": "equipment.eq002.name",
+	  "trait_desc_keys": [
+		"equipment.eq002.trait_desc.0"
+	  ]
+	},
+	"eq003": {
+	  "equipment_name": "magicbook",
+	  "texture_path": "res://Assets/dice-magicbook.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 0,
+	  "defense_bonus": 0,
+	  "traits": [
+		"eqt006"
+	  ],
+	  "trait_descs": [
+		"When thrown, give 1 Speedup to the front ally."
+	  ],
+	  "display_name_key": "equipment.eq003.name",
+	  "trait_desc_keys": [
+		"equipment.eq003.trait_desc.0"
+	  ]
+	},
+	"eq004": {
+	  "equipment_name": "dagger",
+	  "texture_path": "res://Assets/dice-dagger.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 2,
+	  "defense_bonus": 0,
+	  "trait_descs": [
+		"While face up, attack +2."
+	  ],
+	  "traits": [],
+	  "display_name_key": "equipment.eq004.name",
+	  "trait_desc_keys": [
+		"equipment.eq004.trait_desc.0"
+	  ]
+	},
+	"eq005": {
+	  "equipment_name": "hammer",
+	  "texture_path": "res://Assets/dice-hammer.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 0,
+	  "defense_bonus": 0,
+	  "traits": [
+		"eqt007"
+	  ],
+	  "trait_descs": [
+		"When thrown, apply 1 Lockout to self and the enemy face-up equipment. Lockout: throw and face-up effects are disabled, cannot stack, and is consumed after spell resolution."
+	  ],
+	  "display_name_key": "equipment.eq005.name",
+	  "trait_desc_keys": [
+		"equipment.eq005.trait_desc.0"
+	  ]
+	},
+	"eq008": {
+	  "equipment_name": "broken stopwatch",
+	  "texture_path": "res://Assets/dice-broken stopwatch.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 0,
+	  "defense_bonus": 0,
+	  "traits": [
+		"eqt008"
+	  ],
+	  "trait_descs": [
+		"While face up, every 3 countdown ticks, give 1 Speedup to the front ally."
+	  ],
+	  "display_name_key": "equipment.eq008.name",
+	  "trait_desc_keys": [
+		"equipment.eq008.trait_desc.0"
+	  ]
+	},
+	"eq009": {
+	  "equipment_name": "fresh grass",
+	  "texture_path": "res://Assets/dice-fresh grass.png",
+	  "slot_limit": 6,
+	  "attack_bonus": 0,
+	  "defense_bonus": 0,
+	  "trait_descs": [
+		"While face up, the holder's spell and trait healing is increased by 2."
+	  ],
+	  "traits": [],
+	  "display_name_key": "equipment.eq009.name",
+	  "trait_desc_keys": [
+		"equipment.eq009.trait_desc.0"
+	  ]
+	}
+  }
+}

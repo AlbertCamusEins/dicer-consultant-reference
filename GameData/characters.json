@@ -1,0 +1,76 @@
+{
+  "characters": {
+	"fc001": {
+	  "name": "Lina",
+	  "texture_path": "res://Assets/dice-Lina.png",
+	  "base_health": 20,
+	  "countdown": 3,
+	  "traits": [
+		"t001"
+	  ],
+	  "prime_hex_id": "fh001",
+	  "slot_limit": 6,
+	  "experience": 0,
+	  "peak_hex_id": "",
+	  "soul_hex_id": "",
+	  "display_name_key": "char.fc001.name"
+	},
+	"fc002": {
+	  "name": "Slime",
+	  "texture_path": "res://Assets/dice-Slime.png",
+	  "base_health": 20,
+	  "countdown": 3,
+	  "traits": [
+		"t002"
+	  ],
+	  "prime_hex_id": "fh002",
+	  "experience": 0,
+	  "peak_hex_id": "",
+	  "soul_hex_id": "",
+	  "display_name_key": "char.fc002.name"
+	},
+	"fc003": {
+	  "name": "Bob",
+	  "texture_path": "res://Assets/dice-Bob.png",
+	  "base_health": 20,
+	  "countdown": 2,
+	  "traits": [
+		"t005"
+	  ],
+	  "prime_hex_id": "fh012",
+	  "experience": 0,
+	  "peak_hex_id": "",
+	  "soul_hex_id": "",
+	  "display_name_key": "char.fc003.name"
+	},
+	"fc004": {
+	  "name": "Robin",
+	  "texture_path": "res://Assets/dice-Robin.png",
+	  "base_health": 20,
+	  "countdown": 3,
+	  "traits": [
+		"t004"
+	  ],
+	  "prime_hex_id": "fh004",
+	  "experience": 0,
+	  "peak_hex_id": "",
+	  "soul_hex_id": "",
+	  "display_name_key": "char.fc004.name"
+	},
+	"fc005": {
+	  "name": "hog",
+	  "texture_path": "res://Assets/dice-hog.png",
+	  "base_health": 20,
+	  "countdown": 4,
+	  "traits": [
+		"t003"
+	  ],
+	  "prime_hex_id": "fh029",
+	  "slot_limit": 6,
+	  "experience": 0,
+	  "peak_hex_id": "",
+	  "soul_hex_id": "",
+	  "display_name_key": "char.fc005.name"
+	}
+  }
+}

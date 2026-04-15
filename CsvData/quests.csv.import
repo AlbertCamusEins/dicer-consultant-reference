@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dnhtgjxnv32js"
+
+[deps]
+
+files=["res://CsvData/quests.quest.translation", "res://CsvData/quests.title.translation", "res://CsvData/quests.category.translation", "res://CsvData/quests.prerequisites.translation", "res://CsvData/quests.requirements.translation", "res://CsvData/quests.variants.translation", "res://CsvData/quests.time.translation", "res://CsvData/quests.rewards.translation", "res://CsvData/quests.failure.translation"]
+
+source_file="res://CsvData/quests.csv"
+dest_files=["res://CsvData/quests.quest.translation", "res://CsvData/quests.title.translation", "res://CsvData/quests.category.translation", "res://CsvData/quests.prerequisites.translation", "res://CsvData/quests.requirements.translation", "res://CsvData/quests.variants.translation", "res://CsvData/quests.time.translation", "res://CsvData/quests.rewards.translation", "res://CsvData/quests.failure.translation"]
+
+[params]
+
+compress=true
+delimiter=0

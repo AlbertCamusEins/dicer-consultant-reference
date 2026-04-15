@@ -1,0 +1,24 @@
+{
+  "bosses": {
+	"boss001": {
+	  "name": "Grand Slime",
+	  "texture_path": "res://Assets/enemy-Grand Slime.png",
+	  "base_health": 25,
+	  "traits": [
+		"Split"
+	  ],
+	  "weight": 10,
+	  "display_name_key": "enemy.boss001.name"
+	},
+	"boss002": {
+	  "name": "King Rabbit",
+	  "texture_path": "res://Assets/enemy-King Rabbit.png",
+	  "base_health": 25,
+	  "traits": [
+		"Hop"
+	  ],
+	  "weight": 10,
+	  "display_name_key": "enemy.boss002.name"
+	}
+  }
+}

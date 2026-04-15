@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://didkcktdct1ks"
+
+[deps]
+
+files=["res://CsvData/bosses.display.translation", "res://CsvData/bosses.name.translation", "res://CsvData/bosses.texture.translation", "res://CsvData/bosses.base.translation", "res://CsvData/bosses.traits.translation", "res://CsvData/bosses.weight.translation", "res://CsvData/bosses.countdown.translation"]
+
+source_file="res://CsvData/bosses.csv"
+dest_files=["res://CsvData/bosses.display.translation", "res://CsvData/bosses.name.translation", "res://CsvData/bosses.texture.translation", "res://CsvData/bosses.base.translation", "res://CsvData/bosses.traits.translation", "res://CsvData/bosses.weight.translation", "res://CsvData/bosses.countdown.translation"]
+
+[params]
+
+compress=true
+delimiter=0

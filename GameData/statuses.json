@@ -1,0 +1,93 @@
+{
+  "statuses": {
+	"st001": {
+	  "status_name": "stun",
+	  "texture_path": "res://Assets/status-stun.png",
+	  "status_type": 1,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": 1,
+	  "stack_count": 1,
+	  "description": "Skip next action.",
+	  "effects": {
+		"skip_action": true
+	  }
+	},
+	"st002": {
+	  "status_name": "burn",
+	  "texture_path": "res://Assets/status-burn.png",
+	  "status_type": 1,
+	  "category": 0,
+	  "status_target": 0,
+	  "duration": 3,
+	  "stack_count": 1,
+	  "description": "Take periodic damage.",
+	  "effects": {
+		"tick_damage": 2,
+		"tick_phase": "global_tick"
+	  }
+	},
+	"st003": {
+	  "status_name": "cover",
+	  "texture_path": "res://Assets/status-cover.png",
+	  "status_type": 0,
+	  "category": 1,
+	  "status_target": 0,
+	  "duration": 2,
+	  "stack_count": 1,
+	  "description": "Reduce incoming damage.",
+	  "effects": {
+		"incoming_damage_add": -1,
+		"incoming_damage_mul": 1.0,
+		"outgoing_damage_add": 0,
+		"outgoing_damage_mul": 1.0
+	  }
+	},
+	"st004": {
+	  "status_name": "frozen",
+	  "texture_path": "res://Assets/status-frozen.png",
+	  "status_type": 1,
+	  "category": 2,
+	  "status_target": 2,
+	  "duration": 2,
+	  "stack_count": 1,
+	  "description": "Disable the frozen dice face interactions.",
+	  "effects": {
+		"disable_flip": true,
+		"disable_roll": true
+	  }
+	},
+	"st005": {
+	  "status_name": "vulnerable",
+	  "texture_path": "res://Assets/status-frozen-vuln.png",
+	  "status_type": 1,
+	  "category": 1,
+	  "status_target": 0,
+	  "duration": 1,
+	  "stack_count": 1,
+	  "description": "Increase incoming damage.",
+	  "effects": {
+		"incoming_damage_add": 0,
+		"incoming_damage_mul": 1.25,
+		"outgoing_damage_add": 0,
+		"outgoing_damage_mul": 1.0
+	  }
+	},
+	"st006": {
+	  "status_name": "sharp",
+	  "texture_path": "",
+	  "status_type": 0,
+	  "category": 1,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "description": "Increase outgoing weapon damage.",
+	  "effects": {
+		"outgoing_damage_add": 2,
+		"incoming_damage_add": 0,
+		"outgoing_damage_mul": 1.0,
+		"incoming_damage_mul": 1.0
+	  }
+	}
+  }
+}

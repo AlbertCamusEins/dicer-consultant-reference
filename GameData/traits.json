@@ -1,0 +1,63 @@
+{
+  "traits": {
+	"t001": {
+	  "name": "armored",
+	  "desc": "投掷后自身获得2护盾",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "rolled",
+		  "actions": [
+			{
+			  "type": 3,
+			  "value": 2,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ]
+	},
+	"t002": {
+	  "name": "kunai",
+	  "desc": "自身在frien正面出现时，对正面敌人造成2伤害",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "deploy",
+		  "actions": [
+			{
+			  "type": 0,
+			  "value": -2,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ]
+	}
+  }
+}

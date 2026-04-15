@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d2q4exolwcfsq"
+valid=false
+
+[deps]
+
+source_file="res://CsvData/equipments.csv"
+
+[params]
+
+compress=true
+delimiter=0

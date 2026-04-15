@@ -1,0 +1,202 @@
+{
+  "enemies": {
+	"fb001": {
+	  "name": "Rabbit",
+	  "texture_path": "res://Assets/enemy-rabbit.png",
+	  "base_health": 18,
+	  "weight": 2,
+	  "equipment": [
+		"eq008"
+	  ],
+	  "hexes": [
+		"fh013"
+	  ],
+	  "countdown": 4,
+	  "traits": [],
+	  "display_name_key": "enemy.fb001.name"
+	},
+	"fb002": {
+	  "name": "Sheep",
+	  "texture_path": "res://Assets/enemy-sheep.png",
+	  "base_health": 20,
+	  "traits": [
+		"et010"
+	  ],
+	  "weight": 3,
+	  "equipment": [
+		"eq009"
+	  ],
+	  "hexes": [
+		"fh023"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb002.name"
+	},
+	"fb003": {
+	  "name": "Slime",
+	  "texture_path": "res://Assets/enemy-slime.png",
+	  "base_health": 15,
+	  "weight": 2,
+	  "equipment": [
+		"eq002"
+	  ],
+	  "hexes": [
+		"fh012"
+	  ],
+	  "countdown": 2,
+	  "traits": [],
+	  "display_name_key": "enemy.fb003.name"
+	},
+	"fb006": {
+	  "name": "wandering puff",
+	  "texture_path": "res://Assets/enemy-wandering puff.png",
+	  "base_health": 16,
+	  "traits": [
+		"et001"
+	  ],
+	  "weight": 2,
+	  "equipment": [
+		"eq002"
+	  ],
+	  "hexes": [
+		"fh022"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb006.name"
+	},
+	"fb007": {
+	  "name": "LANturn",
+	  "texture_path": "res://Assets/enemy-LANturn.png",
+	  "base_health": 18,
+	  "traits": [
+		"et002"
+	  ],
+	  "weight": 3,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh027"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb007.name"
+	},
+	"fb008": {
+	  "name": "curtainer",
+	  "texture_path": "res://Assets/enemy-curtainer.png",
+	  "base_health": 18,
+	  "traits": [
+		"et004"
+	  ],
+	  "weight": 3,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh024"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb008.name"
+	},
+	"fb009": {
+	  "name": "walld",
+	  "texture_path": "res://Assets/enemy-walld.png",
+	  "base_health": 200,
+	  "traits": [
+		"et005"
+	  ],
+	  "weight": 6,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh012"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb009.name"
+	},
+	"fb010": {
+	  "name": "desc",
+	  "texture_path": "res://Assets/enemy-desc.png",
+	  "base_health": 120,
+	  "weight": 8,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh012"
+	  ],
+	  "countdown": 4,
+	  "traits": [],
+	  "display_name_key": "enemy.fb010.name"
+	},
+	"fb011": {
+	  "name": "a part of desc",
+	  "texture_path": "res://Assets/enemy-a part of desc.png",
+	  "base_health": 20,
+	  "weight": 4,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh012"
+	  ],
+	  "countdown": 3,
+	  "health_per_occupied_face": 20,
+	  "traits": [],
+	  "display_name_key": "enemy.fb011.name"
+	},
+	"fb012": {
+	  "name": "pipeling",
+	  "texture_path": "res://Assets/enemy-pipeling.png",
+	  "base_health": 19,
+	  "traits": [
+		"et006"
+	  ],
+	  "weight": 4,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh025"
+	  ],
+	  "countdown": 2,
+	  "display_name_key": "enemy.fb012.name"
+	},
+	"fb013": {
+	  "name": "caged bird",
+	  "texture_path": "res://Assets/enemy-caged bird.png",
+	  "base_health": 80,
+	  "traits": [
+		"et007"
+	  ],
+	  "weight": 7,
+	  "equipment": [
+		"eq001"
+	  ],
+	  "hexes": [
+		"fh010",
+		"fh011"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb013.name"
+	},
+	"fb004": {
+	  "name": "Sheef",
+	  "texture_path": "res://Assets/enemy-sheef.png",
+	  "base_health": 25,
+	  "traits": [
+		"et008"
+	  ],
+	  "weight": 5,
+	  "equipment": [
+		"eq009"
+	  ],
+	  "hexes": [
+		"fh023"
+	  ],
+	  "countdown": 3,
+	  "display_name_key": "enemy.fb004.name"
+	}
+  }
+}

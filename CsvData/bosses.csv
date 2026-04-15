@@ -1,0 +1,3 @@
+id,display_name_key,name,texture_path,base_health,traits,weight,countdown
+boss001,,Grand Slime,res://Assets/enemy-Grand Slime.png,25,"[""Split""]",10,2
+boss002,,King Rabbit,res://Assets/enemy-King Rabbit.png,25,"[""Hop""]",10,2

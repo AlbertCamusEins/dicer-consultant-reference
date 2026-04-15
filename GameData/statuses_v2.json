@@ -1,0 +1,319 @@
+{
+  "statuses": {
+	"st001": {
+	  "display_name_key": "status.st001.name",
+	  "description_key": "status.st001.desc",
+	  "status_name": "stun",
+	  "texture_path": "res://Assets/status-stun.png",
+	  "status_type": 1,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": 1,
+	  "stack_count": 1,
+	  "description": "Skip next action.",
+	  "hover_description": "该角色的下一次行动会被跳过。",
+	  "effects": {
+		"skip_action": true
+	  }
+	},
+	"st002": {
+	  "display_name_key": "status.st002.name",
+	  "description_key": "status.st002.desc",
+	  "status_name": "burn",
+	  "texture_path": "res://Assets/status-burn.png",
+	  "status_type": 1,
+	  "category": 0,
+	  "status_target": 0,
+	  "duration": 3,
+	  "stack_count": 1,
+	  "max_stacks": -1,
+	  "description": "Take periodic damage.",
+	  "hover_description": "该角色在下{duration}次倒数后，每次受到{total_tick_damage}点伤害。",
+	  "effects": {
+		"tick_damage": 2,
+		"tick_phase": "global_tick"
+	  }
+	},
+	"st003": {
+	  "display_name_key": "status.st003.name",
+	  "description_key": "status.st003.desc",
+	  "status_name": "cover",
+	  "texture_path": "res://Assets/status-cover.png",
+	  "status_type": 0,
+	  "category": 1,
+	  "status_target": 0,
+	  "duration": 2,
+	  "stack_count": 1,
+	  "description": "Reduce incoming damage.",
+	  "hover_description": "该角色在接下来的{duration}次倒数内每次受到的伤害减少{stacks}点。",
+	  "effects": {
+		"incoming_damage_add": -1,
+		"incoming_damage_mul": 1.0,
+		"outgoing_damage_add": 0,
+		"outgoing_damage_mul": 1.0
+	  }
+	},
+	"st004": {
+	  "display_name_key": "status.st004.name",
+	  "description_key": "status.st004.desc",
+	  "status_name": "frozen",
+	  "texture_path": "res://Assets/status-frozen.png",
+	  "status_type": 1,
+	  "category": 2,
+	  "status_target": 2,
+	  "duration": 2,
+	  "stack_count": 1,
+	  "description": "Disable the frozen dice face interactions.",
+	  "hover_description": "该骰面在接下来的{duration}次倒数内无法翻转或投掷。",
+	  "effects": {
+		"disable_flip": true,
+		"disable_roll": true
+	  }
+	},
+	"st005": {
+	  "display_name_key": "status.st005.name",
+	  "description_key": "status.st005.desc",
+	  "status_name": "vulnerable",
+	  "texture_path": "res://Assets/status-frozen-vuln.png",
+	  "status_type": 1,
+	  "category": 1,
+	  "status_target": 0,
+	  "duration": 1,
+	  "stack_count": 1,
+	  "description": "Increase incoming damage.",
+	  "hover_description": "该角色在接下来的{duration}次倒数内受到的伤害提高。",
+	  "effects": {
+		"incoming_damage_add": 0,
+		"incoming_damage_mul": 1.25,
+		"outgoing_damage_add": 0,
+		"outgoing_damage_mul": 1.0
+	  }
+	},
+	"st006": {
+	  "display_name_key": "status.st006.name",
+	  "description_key": "status.st006.desc",
+	  "status_name": "sharp",
+	  "status_type": 0,
+	  "category": 1,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "description": "Increase outgoing weapon damage.",
+	  "hover_description": "当前骰面造成的武器伤害提高{stacks}次结算，每次额外+{outgoing_damage_add}。",
+	  "effects": {
+		"outgoing_damage_add": 2,
+		"incoming_damage_add": 0,
+		"outgoing_damage_mul": 1.0,
+		"incoming_damage_mul": 1.0
+	  }
+	},
+	"st007": {
+	  "display_name_key": "status.st007.name",
+	  "description_key": "status.st007.desc",
+	  "status_name": "stealth",
+	  "status_type": 2,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Exclude this character from the next friend-dice roll if other faces are available.",
+	  "hover_description": "该角色会在下一次友方角色骰投掷时被排除。",
+	  "effects": {
+		"exclude_from_next_friend_roll": true
+	  }
+	},
+	"st008": {
+	  "display_name_key": "status.st008.name",
+	  "description_key": "status.st008.desc",
+	  "status_name": "pressed",
+	  "status_type": 0,
+	  "category": 1,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "description": "Increase outgoing weapon damage by 50%.",
+	  "hover_description": "当前骰面的武器伤害提高至{outgoing_damage_mul}倍。",
+	  "effects": {
+		"outgoing_damage_add": 0,
+		"incoming_damage_add": 0,
+		"outgoing_damage_mul": 1.5,
+		"incoming_damage_mul": 1.0
+	  }
+	},
+	"st009": {
+	  "display_name_key": "status.st009.name",
+	  "description_key": "status.st009.desc",
+	  "status_name": "poisoned",
+	  "texture_path": "res://Assets/status-poisoned.png",
+	  "status_type": 1,
+	  "category": 0,
+	  "status_target": 0,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": -1,
+	  "description": "Infinite duration. Stacks infinitely. After this unit acts, deal 6 damage per stack, then clear all stacks.",
+	  "hover_description": "该角色在每次行动后受到{total_tick_damage}点伤害，然后清空该状态。",
+	  "effects": {
+		"tick_damage": 6,
+		"tick_phase": "after_action",
+		"duration_tick_phase": "after_action",
+		"clear_stacks_after_trigger": true
+	  }
+	},
+	"st010": {
+	  "display_name_key": "status.st010.name",
+	  "description_key": "status.st010.desc",
+	  "status_name": "bright",
+	  "status_type": 0,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "A visible toggle status used by Bright Delight.",
+	  "hover_description": "该角色当前处于明亮状态。",
+	  "effects": {}
+	},
+	"st011": {
+	  "display_name_key": "status.st011.name",
+	  "description_key": "status.st011.desc",
+	  "status_name": "resonance",
+	  "status_type": 1,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Infinite duration. When this unit would take direct spell damage, clear Resonance from all resonant units, then echo half the original spell damage to the others.",
+	  "hover_description": "该角色当前处于共鸣状态，会在受到直接法术伤害时触发连锁效果。",
+	  "effects": {}
+	},
+	"st012": {
+	  "display_name_key": "status.st012.name",
+	  "description_key": "status.st012.desc",
+	  "status_name": "slow",
+	  "status_type": 1,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": 1,
+	  "stack_count": 1,
+	  "max_stacks": -1,
+	  "description": "On apply, increase this unit's countdown by 1 once。",
+	  "hover_description": "该角色当前倒数额外+{on_apply_self_countdown_delta}，并在下{duration}次行动后移除。",
+	  "effects": {
+		"on_apply_self_countdown_delta": 1,
+		"duration_tick_phase": "after_action"
+	  }
+	},
+	"st013": {
+	  "display_name_key": "status.st013.name",
+	  "description_key": "status.st013.desc",
+	  "status_name": "speedup",
+	  "status_type": 0,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": 1,
+	  "stack_count": 1,
+	  "max_stacks": -1,
+	  "description": "On apply, reduce this unit's countdown by 1 once。",
+	  "hover_description": "该角色当前倒数额外{on_apply_self_countdown_delta}，并在下{duration}次行动后移除。",
+	  "effects": {
+		"on_apply_self_countdown_delta": -1,
+		"duration_tick_phase": "after_action"
+	  }
+	},
+	"st014": {
+	  "display_name_key": "status.st014.name",
+	  "description_key": "status.st014.desc",
+	  "status_name": "stealth_equip",
+	  "status_type": 2,
+	  "category": 2,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Exclude this equipment face from the next equipment-die roll if other faces are available.",
+	  "hover_description": "该装备骰面会在下一次装备骰投掷时被排除。",
+	  "effects": {
+		"exclude_from_next_friend_roll": true
+	  }
+	},
+	"st015": {
+	  "display_name_key": "status.st015.name",
+	  "description_key": "status.st015.desc",
+	  "status_name": "stealth_hex",
+	  "status_type": 2,
+	  "category": 2,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Exclude this hex face from the next hex-die roll if other faces are available.",
+	  "hover_description": "该法术骰面会在下一次法术骰投掷时被排除。",
+	  "effects": {
+		"exclude_from_next_friend_roll": true
+	  }
+	},
+	"st016": {
+	  "display_name_key": "status.st016.name",
+	  "description_key": "status.st016.desc",
+	  "status_name": "escape",
+	  "status_type": 2,
+	  "category": 3,
+	  "status_target": 0,
+	  "duration": 3,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Counts down after each action. Escape when it expires.",
+	  "hover_description": "该角色会在下{duration}次行动后逃离战斗。",
+	  "effects": {
+		"duration_tick_phase": "after_action"
+	  }
+	},
+	"st017": {
+	  "display_name_key": "status.st017.name",
+	  "description_key": "status.st017.desc",
+	  "status_name": "expose",
+	  "status_type": 2,
+	  "category": 2,
+	  "status_target": 0,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "This character must appear face up on the next friend-dice roll.",
+	  "hover_description": "该角色在下一次友方角色骰投掷时必定朝上。",
+	  "effects": {
+		"force_next_friend_roll": true
+	  }
+	},
+	"st018": {
+	  "display_name_key": "status.st018.name",
+	  "description_key": "status.st018.desc",
+	  "status_name": "ready",
+	  "status_type": 2,
+	  "category": 2,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Infinite duration. This status belongs to the Sword equipment and is mirrored across all matching Sword faces. While Sword is face up, the next ally spell resolution deals 4 damage to the front enemy, then consumes this status.",
+	  "hover_description": "当前匹配的剑类装备已就绪，下一次友方法术结算会对前排敌人追加伤害后移除。",
+	  "effects": {}
+	},
+	"st019": {
+	  "display_name_key": "status.st019.name",
+	  "description_key": "status.st019.desc",
+	  "status_name": "lockout",
+	  "status_type": 2,
+	  "category": 2,
+	  "status_target": 2,
+	  "duration": -1,
+	  "stack_count": 1,
+	  "max_stacks": 1,
+	  "description": "Infinite duration. This status belongs to an equipment and is mirrored across all matching equipment faces. Throw and face-up effects are disabled while Lockout is present. Lockout cannot stack and is consumed after the owning side resolves its next spell.",
+	  "hover_description": "当前装备骰面被锁定，无法触发投掷或朝上效果，直到下一次己方法术结算后移除。",
+	  "effects": {}
+	}
+  }
+}

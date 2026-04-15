@@ -1,0 +1,7 @@
+id,hex_id,animation_type,asset_path,frame_count,frame_width,frame_height,duration,scale_x,scale_y,offset_x,offset_y,anchor_mode,mirror_x,target_scope,play_order,legacy_script_path,enabled
+fh001_process,fh001,process,res://Assets/anim-fireball-Sheet.png,5,256,256,0.5,2,2,,-40,midfield,true,first,1,res://Scripts/scenes scripts/fireball_spell_effect.gd,
+fh001_impact,fh001,impact,res://Assets/anim-firecrack-Sheet.png,4,256,256,0.1,,,,,target,,all,2,res://Scripts/scenes scripts/firecrack_spell_effect.gd,
+fh012_impact,fh012,impact,res://Assets/anim-cut-Sheet.png,4,256,256,0.1,2,2,,,target,,all,1,res://Scripts/scenes scripts/cut_spell_effect.gd,
+fh022_process,fh022,process,res://Assets/anim-spread spore-Sheet.png,6,256,256,0.5,2,2,,-40,midfield,true,first,1,res://Scripts/scenes scripts/spread_spore_spell_effect.gd,
+fh022_impact,fh022,impact,res://Assets/anim-poisoned-Sheet.png,6,256,256,0.2,2,2,,,target,,all,2,res://Scripts/scenes scripts/poisoned_spell_effect.gd,
+fh023_impact,fh023,impact,res://Assets/anim-bite-Sheet.png,4,256,256,0.1,1.5,1.5,,,target,,first,1,res://Scripts/scenes scripts/bite_spell_effect.gd,
