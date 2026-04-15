@@ -1,0 +1,162 @@
+{
+  "quests": {
+	"q_fireball_training": {
+	  "category": "battle",
+	  "prerequisites": [
+		{
+		  "type": "inventory_contains",
+		  "face_type": "hex",
+		  "face_id": "fh001",
+		  "minimum_faces": 1
+		}
+	  ],
+	  "requirements": [
+		{
+		  "type": "battle_count",
+		  "count": 3
+		}
+	  ],
+	  "variants": [
+		{
+		  "type": "build_constraint",
+		  "dice_type": "hex",
+		  "face_id": "fh001",
+		  "minimum_faces": 1
+		}
+	  ],
+	  "time_limit": {
+		"type": "battle_count",
+		"count": 5
+	  },
+	  "rewards": {
+		"gold": 100,
+		"faces": [],
+		"items": [],
+		"flags": []
+	  },
+	  "failure": {},
+	  "title_key": "quest.q_fireball_training.title",
+	  "quest_id": "q_fireball_training"
+	},
+	"q_first_dispatch": {
+	  "category": "dispatch",
+	  "prerequisites": [],
+	  "requirements": [
+		{
+		  "type": "dispatch_complete",
+		  "count": 1
+		}
+	  ],
+	  "variants": [],
+	  "time_limit": {},
+	  "rewards": {
+		"gold": 80,
+		"faces": [],
+		"items": [],
+		"flags": []
+	  },
+	  "failure": {},
+	  "title_key": "quest.q_first_dispatch.title",
+	  "quest_id": "q_first_dispatch"
+	},
+	"q_hunt_order": {
+	  "category": "battle",
+	  "prerequisites": [],
+	  "requirements": [
+		{
+		  "type": "battle_victory",
+		  "count": 2
+		}
+	  ],
+	  "variants": [
+		{
+		  "type": "encounter_override",
+		  "battle_types": [
+			"normal",
+			"elite"
+		  ],
+		  "next_battles": 2,
+		  "enemy_ids": [
+			"fb001",
+			"fb002"
+		  ]
+		}
+	  ],
+	  "time_limit": {
+		"type": "battle_finished",
+		"count": 3
+	  },
+	  "rewards": {
+		"gold": 120,
+		"faces": [],
+		"items": [],
+		"flags": []
+	  },
+	  "failure": {},
+	  "title_key": "quest.q_hunt_order.title",
+	  "quest_id": "q_hunt_order"
+	},
+	"q_trial_kit": {
+	  "category": "item",
+	  "prerequisites": [],
+	  "requirements": [
+		{
+		  "type": "battle_victory",
+		  "count": 1
+		}
+	  ],
+	  "variants": [
+		{
+		  "type": "loan_item",
+		  "item_id": "it001",
+		  "revoke_on": "task_end"
+		}
+	  ],
+	  "time_limit": {
+		"type": "battle_finished",
+		"count": 2
+	  },
+	  "rewards": {
+		"gold": 60,
+		"faces": [],
+		"items": [],
+		"flags": []
+	  },
+	  "failure": {},
+	  "title_key": "quest.q_trial_kit.title",
+	  "quest_id": "q_trial_kit"
+	},
+	"q_collateral_trial": {
+	  "category": "risk",
+	  "prerequisites": [],
+	  "requirements": [
+		{
+		  "type": "battle_victory",
+		  "count": 1
+		}
+	  ],
+	  "variants": [
+		{
+		  "type": "collateral",
+		  "lose_type": "item",
+		  "id": "it001",
+		  "when": "accept",
+		  "temporary": true
+		}
+	  ],
+	  "time_limit": {
+		"type": "battle_finished",
+		"count": 2
+	  },
+	  "rewards": {
+		"gold": 140,
+		"faces": [],
+		"items": [],
+		"flags": []
+	  },
+	  "failure": {},
+	  "title_key": "quest.q_collateral_trial.title",
+	  "quest_id": "q_collateral_trial"
+	}
+  }
+}

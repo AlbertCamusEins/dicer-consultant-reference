@@ -1,0 +1,65 @@
+{
+  "items": {
+	"it001": {
+	  "item_name": "Health Potion",
+	  "type": 2,
+	  "description": "Restores 10 HP.",
+	  "texture_path": "res://Assets/item-potion.png",
+	  "price": 50,
+	  "effect_id": "heal",
+	  "effect_params": {
+		"amount": 10
+	  },
+	  "max_uses": 1,
+	  "display_name_key": "item.it001.name",
+	  "description_key": "item.it001.desc"
+	},
+	"it002": {
+	  "item_name": "Bomb",
+	  "type": 1,
+	  "description": "Deals 10 damage to an enemy.",
+	  "texture_path": "res://Assets/item-bomb.png",
+	  "price": 75,
+	  "effect_id": "damage",
+	  "effect_params": {
+		"amount": 10
+	  },
+	  "max_uses": -1,
+	  "charge_type": 2,
+	  "current_charge": 0,
+	  "max_charge": 2,
+	  "display_name_key": "item.it002.name",
+	  "description_key": "item.it002.desc"
+	},
+	"it003": {
+	  "item_name": "Strength Ring",
+	  "type": 0,
+	  "description": "Increases attack damage by 2.",
+	  "texture_path": "res://Assets/item-ring.png",
+	  "price": 150,
+	  "effect_id": "buff_damage",
+	  "effect_params": {
+		"amount": 2
+	  },
+	  "display_name_key": "item.it003.name",
+	  "description_key": "item.it003.desc"
+	},
+	"it004": {
+	  "item_name": "Refresh Scroll",
+	  "type": 1,
+	  "description": "Gain 10 gold",
+	  "texture_path": "res://Assets/item-scroll.png",
+	  "price": 100,
+	  "effect_id": "gain_gold",
+	  "effect_params": {
+		"amount": 10
+	  },
+	  "max_uses": -1,
+	  "charge_type": 1,
+	  "current_charge": 0,
+	  "max_charge": 3,
+	  "display_name_key": "item.it004.name",
+	  "description_key": "item.it004.desc"
+	}
+  }
+}

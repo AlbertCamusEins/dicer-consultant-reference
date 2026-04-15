@@ -1,0 +1,80 @@
+{
+	"encounters": {
+		"enc001": {
+			"enemies": [
+				"fb001",
+				"fb001"
+			]
+		},
+		"enc002": {
+			"enemies": [
+				"fb003",
+				"fb003",
+				"fb003"
+			]
+		},
+		"enc003": {
+			"enemies": [
+				"fb001",
+				"fb002"
+			]
+		},
+		"enc004": {
+			"enemies": [
+				"fb007"
+			]
+		},
+		"enc005": {
+			"enemies": [
+				"fb003",
+				"fb001",
+				"fb003"
+			]
+		},
+		"enc006": {
+			"enemies": [
+				"fb002"
+			]
+		},
+		"enc007": {
+			"enemies": [
+				"fb001"
+			]
+		},
+		"enc008": {
+			"enemies": [
+				"fb009"
+			]
+		},
+		"enc009":{
+			"enemies":[
+				"fb006",
+				"fb006"
+			]
+		},
+		"enc010":{
+			"enemies":[
+				"fb007",
+				"fb008"
+			]
+		},
+		"enc011": {
+			"enemies": ["fb006", "fb007"]
+		},
+		"enc012": {
+			"enemies": ["fb006", "fb008"]
+		},
+		"enc013": {
+			"enemies": ["fb007", "fb008"]
+		},
+		"enc014":{
+			"enemies": ["fb010"]
+		},
+		"enc015":{
+			"enemies":["fb011","fb008"]
+		},
+		"enc016":{
+			"enemies":["fb012","fb007"]
+		}
+	}
+}

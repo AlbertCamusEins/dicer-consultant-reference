@@ -1,0 +1,19 @@
+{
+	"runs": 100,
+	"seed": 1001,
+	"fast_mode": true,
+	"output_path": "user://battle_simulation_results.json",
+	"player_setup": {
+		"player_character_ids": ["fc001","fc004"],
+		"player_equipment_ids": ["eq004","eq002"],
+		"player_hex_ids": ["fh001","fh012"],
+		"embedded_faces": {},
+		"reroll_count": 0
+	},
+	"encounter_setup": {
+		"mode": "enemy_entries",
+		"encounter_id": "manual_case_01",
+		"label": "manual_case_01",
+		"enemies":["fb002","fb002"]
+	}
+}

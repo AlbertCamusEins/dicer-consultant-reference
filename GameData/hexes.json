@@ -1,0 +1,1136 @@
+{
+  "hexes": {
+	"fh001": {
+	  "name": "fireball",
+	  "hex_desc": "Deal damage to the face-up enemy and apply Burn.",
+	  "texture_path": "res://Assets/dice-fireball.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st002",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 0,
+		  "value": -4,
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh001.name",
+	  "description_key": "hex.fh001.desc"
+	},
+	"fh002": {
+	  "name": "cover",
+	  "hex_desc": "Shield front ally 6.",
+	  "texture_path": "res://Assets/dice-cover.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_ally"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 3,
+		  "value": 6,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh002.name",
+	  "description_key": "hex.fh002.desc"
+	},
+	"fh003": {
+	  "name": "countpuff",
+	  "hex_desc": "Apply poisoned based on face-up enemy's remaining countdown",
+	  "texture_path": "res://Assets/dice-countpuff.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st009",
+		  "stack_count": 0,
+		  "read_target_index": [
+			0
+		  ],
+		  "read_char_stat": "countdown",
+		  "read_value_per_point": 1,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh003.name",
+	  "description_key": "hex.fh003.desc"
+	},
+	"fh004": {
+	  "name": "target_locked",
+	  "hex_desc": "Swift.Deal 4 damage to face-up enemy.",
+	  "texture_path": "res://Assets/dice-target_locked.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -4,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [
+		"ht002"
+	  ],
+	  "display_name_key": "hex.fh004.name",
+	  "description_key": "hex.fh004.desc"
+	},
+	"fh005": {
+	  "name": "heal",
+	  "hex_desc": "Heal front ally 6.",
+	  "texture_path": "res://Assets/dice-heal.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_ally"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": 6,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh005.name",
+	  "description_key": "hex.fh005.desc"
+	},
+	"fh006": {
+	  "name": "toxic time",
+	  "hex_desc": "Apply 1 poisoned and 1 speedup to face-up enemy",
+	  "texture_path": "res://Assets/dice-toxic time.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st009",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st013",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh006.name",
+	  "description_key": "hex.fh006.desc"
+	},
+	"fh007": {
+	  "name": "ignite",
+	  "hex_desc": "Switf. Apply 1 layer of 2-tick burn to face-up enemy",
+	  "texture_path": "res://Assets/dice-ignite.png",
+	  "slot_limit": 3,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st002",
+		  "status_info": {
+			"duration": 2
+		  },
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [
+		"ht002"
+	  ],
+	  "display_name_key": "hex.fh007.name",
+	  "description_key": "hex.fh007.desc"
+	},
+	"fh008": {
+	  "name": "stoke",
+	  "hex_desc": "Apply 1 stack of 3-tick burn to face-up enemy. Up-flip ally hex dice.",
+	  "texture_path": "res://Assets/dice-stoke.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 2,
+		  "condition": {
+			"dice_reference": {
+			  "type": 2,
+			  "face": 0
+			}
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st002",
+		  "duration": 3,
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 2,
+		  "special_id": "flip_dice",
+		  "flip_direction": "UP",
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh008.name",
+	  "description_key": "hex.fh008.desc"
+	},
+	"fh009": {
+	  "name": "warmth",
+	  "hex_desc": "Restore health to the face-up ally equal to the face-up enemy's Burn stacks times 4.",
+	  "texture_path": "res://Assets/dice-warmth.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": 0,
+		  "read_target_index": [
+			1
+		  ],
+		  "read_status_id": "st002",
+		  "read_value_per_stack": 4,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh009.name",
+	  "description_key": "hex.fh009.desc"
+	},
+	"fh010": {
+	  "name": "iron chant",
+	  "hex_desc": "Increase all player characters' countdown by 1 once.",
+	  "texture_path": "res://Assets/dice-iron chant.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {},
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st012",
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "enemy_owned": true,
+	  "traits": [],
+	  "display_name_key": "hex.fh010.name",
+	  "description_key": "hex.fh010.desc"
+	},
+	"fh011": {
+	  "name": "cage crash",
+	  "hex_desc": "Deal 8 damage to the back-row player character.",
+	  "texture_path": "res://Assets/dice-cage crash.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "back_enemy"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -8,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "enemy_owned": true,
+	  "traits": [],
+	  "display_name_key": "hex.fh011.name",
+	  "description_key": "hex.fh011.desc"
+	},
+	"fh012": {
+	  "name": "attack",
+	  "hex_desc": "deal 6 damage to target faced up.",
+	  "texture_path": "res://Assets/dice-sword.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -6,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh012.name",
+	  "description_key": "hex.fh012.desc"
+	},
+	"fh013": {
+	  "name": "spit",
+	  "hex_desc": "Swift. Deal 2 damage to the face-up enemy.",
+	  "texture_path": "res://Assets/dice-spit.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -2,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [
+		"ht002"
+	  ],
+	  "enemy_owned": true,
+	  "display_name_key": "hex.fh013.name",
+	  "description_key": "hex.fh013.desc"
+	},
+	"fh014": {
+	  "name": "slap",
+	  "hex_desc": "Deal 4 to face-up enemy. Left-flip enemy frien dice.",
+	  "texture_path": "res://Assets/dice-slap.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 1,
+		  "type": 2,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -4,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 2,
+		  "special_id": "flip_dice",
+		  "flip_direction": "LEFT",
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh014.name",
+	  "description_key": "hex.fh014.desc"
+	},
+	"fh015": {
+	  "name": "grasp time",
+	  "hex_desc": "Reduce the face-up allied character and face-up enemy countdown by 1.",
+	  "texture_path": "res://Assets/dice-grasp time.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st013",
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st012",
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh015.name",
+	  "description_key": "hex.fh015.desc"
+	},
+	"fh016": {
+	  "name": "pyresnare",
+	  "hex_desc": "Apply 1 stack of 3-tick Burn and 1 Slow to the face-up enemy.",
+	  "texture_path": "res://Assets/dice-pyresnare.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st002",
+		  "status_info": {
+			"duration": 3
+		  },
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st012",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh016.name",
+	  "description_key": "hex.fh016.desc"
+	},
+	"fh017": {
+	  "name": "flame pierce",
+	  "hex_desc": "Deal 4 plus 2 times of burn stack to face-up enemy.",
+	  "texture_path": "res://Assets/dice-flame pierce.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -4,
+		  "read_target_index": [
+			0
+		  ],
+		  "read_status_id": "st002",
+		  "read_value_per_stack": 2,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh017.name",
+	  "description_key": "hex.fh017.desc"
+	},
+	"fh018": {
+	  "name": "nightshade",
+	  "hex_desc": "Apply 1 stack of poisoned to face-up enemy. Grant self stealth.",
+	  "texture_path": "res://Assets/dice-nightshade.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 1,
+		  "condition": {
+			"dice_reference": {
+			  "type": 2,
+			  "face": 0
+			}
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st009",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st015",
+		  "cast_condition": 0,
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh018.name",
+	  "description_key": "hex.fh018.desc"
+	},
+	"fh019": {
+	  "name": "probation",
+	  "hex_desc": "Apply 1 poisoned and 1 slow to face-up enemy",
+	  "texture_path": "res://Assets/dice-probation.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"dice_reference": {
+			  "type": 0,
+			  "face": 0
+			}
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 1,
+		  "status_id": "st009",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st012",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh019.name",
+	  "description_key": "hex.fh019.desc"
+	},
+	"fh020": {
+	  "name": "puffcaps",
+	  "hex_desc": "Heal all enemies 2. Apply 1 poisoned to all enemies.",
+	  "texture_path": "res://Assets/dice-puffcaps.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {},
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": 2,
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st009",
+		  "cast_condition": 0,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh020.name",
+	  "description_key": "hex.fh020.desc"
+	},
+	"fh021": {
+	  "name": "heavy punch",
+	  "hex_desc": "Deal 14 to the face-up enemy. Grant self 1 stack of slow.",
+	  "texture_path": "res://Assets/dice-heavy punch.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {},
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -14,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st012",
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh021.name",
+	  "description_key": "hex.fh021.desc"
+	},
+	"fh022": {
+	  "name": "spread spore",
+	  "hex_desc": "Deal 4 and grant 1 stack of poisoned to face-up enemy",
+	  "texture_path": "res://Assets/dice-spread spore.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -4,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st009",
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "enemy_owned": true,
+	  "traits": [],
+	  "display_name_key": "hex.fh022.name",
+	  "description_key": "hex.fh022.desc"
+	},
+	"fh023": {
+	  "name": "bite",
+	  "hex_desc": "Deal 6 to front enemy. Restore 4 health.",
+	  "texture_path": "res://Assets/dice-bite.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -6,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 0,
+		  "value": 4,
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "enemy_owned": true,
+	  "traits": [],
+	  "display_name_key": "hex.fh023.name",
+	  "description_key": "hex.fh023.desc"
+	},
+	"fh024": {
+	  "name": "haunt",
+	  "hex_desc": "Deal 6 damage to the front enemy. If self has Stealth, deal 12 instead.",
+	  "texture_path": "res://Assets/dice-haunt.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -6,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [
+		"ht003"
+	  ],
+	  "enemy_owned": true,
+	  "display_name_key": "hex.fh024.name",
+	  "description_key": "hex.fh024.desc"
+	},
+	"fh025": {
+	  "name": "drill",
+	  "hex_desc": "Deal 8 damage to the front enemy. Retreat 1. Gain Expose.",
+	  "texture_path": "res://Assets/dice-drill.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -8,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 2,
+		  "special_id": "retreat",
+		  "steps": 1,
+		  "target_index": [
+			1
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st017",
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "enemy_owned": true,
+	  "traits": [],
+	  "display_name_key": "hex.fh025.name",
+	  "description_key": "hex.fh025.desc"
+	},
+	"fh026": {
+	  "name": "drill plus",
+	  "hex_desc": "Deal 12 damage to the front enemy. Retreat 1.",
+	  "texture_path": "res://Assets/dice-drill plus.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -12,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 2,
+		  "special_id": "retreat",
+		  "steps": 1,
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "enemy_owned": true,
+	  "traits": [],
+	  "display_name_key": "hex.fh026.name",
+	  "description_key": "hex.fh026.desc"
+	},
+	"fh027": {
+	  "name": "daze",
+	  "hex_desc": "Deal 3 to all enemies.",
+	  "texture_path": "res://Assets/dice-daze.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {},
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -3,
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh027.name",
+	  "description_key": "hex.fh027.desc"
+	},
+	"fh028": {
+	  "name": "step strike",
+	  "hex_desc": "Deal 5 damage to the front enemy. Advance 1.",
+	  "texture_path": "res://Assets/dice-step strike.png",
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 1
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -5,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 2,
+		  "special_id": "advance",
+		  "steps": 1,
+		  "target_index": [
+			1
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh028.name",
+	  "description_key": "hex.fh028.desc"
+	},
+	"fh029": {
+	  "name": "bubbles",
+	  "hex_desc": "Deal 8 and grant 1 stack of slow to front enemy.",
+	  "texture_path": "res://Assets/dice-bubbles.png",
+	  "slot_limit": 6,
+	  "cast_condition": 0,
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_enemy"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "effect_data": [
+		{
+		  "type": 0,
+		  "value": -8,
+		  "target_index": [
+			0
+		  ]
+		},
+		{
+		  "type": 1,
+		  "status_id": "st012",
+		  "target_index": [
+			0
+		  ]
+		}
+	  ],
+	  "traits": [],
+	  "display_name_key": "hex.fh029.name",
+	  "description_key": "hex.fh029.desc"
+	}
+  }
+}

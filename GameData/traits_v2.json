@@ -1,0 +1,944 @@
+{
+  "traits": {
+	"t001": {
+	  "source_kind": "character",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "kindle",
+	  "desc": "When Lina is rolled face up, each burning enemy gains 1 Burn stack.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "enemy_ally_all",
+			"has_status_id": "st002"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "deploy",
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st002",
+			  "duration": 0,
+			  "stack_count": 1,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.t001.name",
+	  "description_key": "trait.t001.desc"
+	},
+	"t002": {
+	  "source_kind": "character",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "corrosive",
+	  "desc": "When this character takes direct spell damage, apply 2 Poison to the damage source.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "damage_source"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "character_damage_taken",
+		  "conditions": {
+			"damage_kind": "action",
+			"is_direct_spell_damage": true
+		  },
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st009",
+			  "stack_count": 2,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.t002.name",
+	  "description_key": "trait.t002.desc"
+	},
+	"t003": {
+	  "source_kind": "character",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "denial",
+	  "desc": "Immune to the first debuff status applied to this unit each battle.",
+	  "target_data": [],
+	  "triggers": [
+		{
+		  "event": "status_applied_before",
+		  "conditions": {
+			"status_type": 1
+		  },
+		  "actions": [
+			{
+			  "type": "negate_status_apply_once"
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.t003.name",
+	  "description_key": "trait.t003.desc"
+	},
+	"t004": {
+	  "source_kind": "character",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "dodging",
+	  "desc": "After Robin resolves a spell, gain Stealth.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "ally_spell_resolved_after",
+		  "conditions": {
+			"self_cast_only": true,
+			"self_lacks_status_id": "st007"
+		  },
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st007",
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.t004.name",
+	  "description_key": "trait.t004.desc"
+	},
+	"t005": {
+	  "source_kind": "character",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "steelheart",
+	  "desc": "After Bob resolves a spell, gain 2 shield.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "ally_spell_resolved_after",
+		  "conditions": {
+			"self_cast_only": true
+		  },
+		  "actions": [
+			{
+			  "type": "shield_change",
+			  "value": 2,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.t005.name",
+	  "description_key": "trait.t005.desc"
+	},
+	"eqt001": {
+	  "source_kind": "equipment",
+	  "template_type": "consumable",
+	  "listener_scope": "face_up_or_global",
+	  "name": "dagger",
+	  "desc": "3 uses. Face up: throw for 4 damage. When an ally gains Stealth, recover 1 use.",
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "runtime_adjust",
+			  "key": "uses",
+			  "delta": -1,
+			  "min": 0,
+			  "max_key": "max_uses",
+			  "require_positive": true
+			},
+			{
+			  "type": "deal_front_enemy_damage",
+			  "value": 4,
+			  "require_previous_action": true
+			}
+		  ]
+		},
+		{
+		  "event": "status_applied_after",
+		  "conditions": {
+			"status_id": "st007",
+			"target_team": "ally"
+		  },
+		  "actions": [
+			{
+			  "type": "runtime_adjust",
+			  "key": "uses",
+			  "delta": 1,
+			  "min": 0,
+			  "max_key": "max_uses"
+			}
+		  ]
+		}
+	  ],
+	  "runtime_defaults": {
+		"uses": 3,
+		"max_uses": 3
+	  },
+	  "display_name_key": "trait.eqt001.name",
+	  "description_key": "trait.eqt001.desc"
+	},
+	"eqt002": {
+	  "source_kind": "equipment",
+	  "template_type": "generic",
+	  "listener_scope": "face_up_only",
+	  "name": "shield",
+	  "desc": "When thrown, give 2 shield to the front ally.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_ally"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "shield_change",
+			  "value": 2,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.eqt002.name",
+	  "description_key": "trait.eqt002.desc"
+	},
+	"eqt003": {
+	  "source_kind": "equipment",
+	  "template_type": "reloadable",
+	  "listener_scope": "face_up_only",
+	  "name": "hand_crossbow",
+	  "desc": "Ammo 1. Face up or ally action: consume ammo to deal 4. Face up while empty: reload 1.",
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "consume_ammo_or_reload",
+			  "damage": 4
+			}
+		  ]
+		},
+		{
+		  "event": "ally_action_before",
+		  "actions": [
+			{
+			  "type": "consume_ammo_and_damage",
+			  "damage": 4
+			}
+		  ]
+		}
+	  ],
+	  "runtime_defaults": {
+		"ammo": 1,
+		"max_ammo": 1
+	  },
+	  "display_name_key": "trait.eqt003.name",
+	  "description_key": "trait.eqt003.desc"
+	},
+	"eqt004": {
+	  "source_kind": "equipment",
+	  "template_type": "chargeable",
+	  "listener_scope": "face_up_only",
+	  "name": "bow",
+	  "desc": "Face up: gain 1 charge. Reset after ally action or when losing face up.",
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "runtime_adjust",
+			  "key": "charge_stacks",
+			  "delta": 1,
+			  "min": 0,
+			  "max_key": "max_charge_stacks"
+			}
+		  ]
+		},
+		{
+		  "event": "ally_action_after",
+		  "actions": [
+			{
+			  "type": "runtime_set",
+			  "key": "charge_stacks",
+			  "value": 0
+			}
+		  ]
+		},
+		{
+		  "event": "equipment_face_up_lost",
+		  "actions": [
+			{
+			  "type": "runtime_set",
+			  "key": "charge_stacks",
+			  "value": 0
+			}
+		  ]
+		}
+	  ],
+	  "runtime_defaults": {
+		"charge_stacks": 0,
+		"max_charge_stacks": 3,
+		"charge_step_attack_bonus": 3,
+		"base_attack_bonus": 3
+	  },
+	  "display_name_key": "trait.eqt004.name",
+	  "description_key": "trait.eqt004.desc"
+	},
+	"eqt005": {
+	  "source_kind": "equipment",
+	  "template_type": "status_gate",
+	  "listener_scope": "face_up_or_global",
+	  "name": "sword_ready",
+	  "desc": "Face up: gain 1 Ready. Ready: while Sword is face up, after an ally spell resolves, deal 4 damage to the front enemy, then consume Ready.",
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "apply_equipment_status",
+			  "status_id": "st018"
+			}
+		  ]
+		},
+		{
+		  "event": "ally_spell_resolved_after",
+		  "conditions": {
+			"self_has_status_id": "st018"
+		  },
+		  "actions": [
+			{
+			  "type": "deal_front_enemy_damage",
+			  "value": 4
+			},
+			{
+			  "type": "remove_equipment_status",
+			  "status_id": "st018",
+			  "require_previous_action": true
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.eqt005.name",
+	  "description_key": "trait.eqt005.desc"
+	},
+	"eqt006": {
+	  "source_kind": "equipment",
+	  "template_type": "generic",
+	  "listener_scope": "face_up_only",
+	  "name": "magicbook",
+	  "desc": "When thrown, give 1 Speedup to the front ally.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_ally"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st013",
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.eqt006.name",
+	  "description_key": "trait.eqt006.desc"
+	},
+	"eqt007": {
+	  "source_kind": "equipment",
+	  "template_type": "generic",
+	  "listener_scope": "face_up_only",
+	  "name": "hammer",
+	  "desc": "When thrown, apply 1 Lockout to self and the enemy face-up equipment. Lockout: throw and face-up effects are disabled, cannot stack, and is consumed after spell resolution.",
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "apply_face_up_equipment_status",
+			  "status_id": "st019",
+			  "target_side": "ally"
+			},
+			{
+			  "type": "apply_face_up_equipment_status",
+			  "status_id": "st019",
+			  "target_side": "enemy"
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.eqt007.name",
+	  "description_key": "trait.eqt007.desc"
+	},
+	"eqt008": {
+	  "source_kind": "equipment",
+	  "template_type": "generic",
+	  "listener_scope": "face_up_only",
+	  "name": "broken stopwatch",
+	  "desc": "While face up, every 3 countdown ticks, give 1 Speedup to the front ally.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "front_ally"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "equipment_face_up",
+		  "actions": [
+			{
+			  "type": "runtime_set",
+			  "key": "tick_counter",
+			  "value": 0
+			}
+		  ]
+		},
+		{
+		  "event": "equipment_countdown_tick",
+		  "actions": [
+			{
+			  "type": "cycle_status_apply",
+			  "key": "tick_counter",
+			  "threshold": 3,
+			  "status_id": "st013",
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		},
+		{
+		  "event": "equipment_face_up_lost",
+		  "actions": [
+			{
+			  "type": "runtime_set",
+			  "key": "tick_counter",
+			  "value": 0
+			}
+		  ]
+		}
+	  ],
+	  "runtime_defaults": {
+		"tick_counter": 0
+	  },
+	  "display_name_key": "trait.eqt008.name",
+	  "description_key": "trait.eqt008.desc"
+	},
+	"ht001": {
+	  "source_kind": "hex",
+	  "template_type": "generic",
+	  "listener_scope": "spell_owner",
+	  "name": "scorching echo",
+	  "desc": "After fireball resolves, deal 1 extra damage to each enemy character actually affected by it.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "context_character_targets"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "spell_cast_after",
+		  "conditions": {
+			"hex_id": "fh001"
+		  },
+		  "actions": [
+			{
+			  "type": "health_change",
+			  "value": -1,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.ht001.name",
+	  "description_key": "trait.ht001.desc"
+	},
+	"ht002": {
+	  "source_kind": "hex",
+	  "template_type": "swift",
+	  "listener_scope": "spell_owner",
+	  "name": "swift",
+	  "desc": "Cast this hex immediately when it is rolled face up. If countdown also reaches zero from the same roll, this hex only resolves once.",
+	  "target_data": [],
+	  "triggers": [],
+	  "display_name_key": "trait.ht002.name",
+	  "description_key": "trait.ht002.desc"
+	},
+	"ht003": {
+	  "source_kind": "hex",
+	  "template_type": "generic",
+	  "listener_scope": "spell_owner",
+	  "name": "haunt echo",
+	  "desc": "After haunt resolves, deal 6 extra damage to each affected character if the caster has Stealth.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "context_character_targets"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "spell_cast_after",
+		  "conditions": {
+			"hex_id": "fh024",
+			"self_has_status_id": "st007"
+		  },
+		  "actions": [
+			{
+			  "type": "health_change",
+			  "value": -6,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.ht003.name",
+	  "description_key": "trait.ht003.desc"
+	},
+	"et001": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "toxic spores",
+	  "desc": "When killed, poison the killer for 1 stack.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "damage_source"
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "last_breath",
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st009",
+			  "stack_count": 1,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et001.name",
+	  "description_key": "trait.et001.desc"
+	},
+	"et002": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "bright delight",
+	  "desc": "When damaged, gain Bright if absent and apply Speedup to all enemies. Otherwise remove Bright.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "enemy_ally_all"
+		  },
+		  "index": 1
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_damage_taken",
+		  "conditions": {
+			"exclude_damage_kind": "status_tick",
+			"self_lacks_status_id": "st010"
+		  },
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st010",
+			  "target_index": [
+				0
+			  ]
+			},
+			{
+			  "type": "status_apply",
+			  "status_id": "st013",
+			  "target_index": [
+				1
+			  ]
+			}
+		  ]
+		},
+		{
+		  "event": "enemy_damage_taken",
+		  "conditions": {
+			"exclude_damage_kind": "status_tick",
+			"self_has_status_id": "st010"
+		  },
+		  "actions": [
+			{
+			  "type": "remove_status",
+			  "status_id": "st010",
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et002.name",
+	  "description_key": "trait.et002.desc"
+	},
+	"et003": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "undefined",
+	  "desc": "When this enemy's countdown is reduced, gain Stealth if absent.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_countdown_reduced",
+		  "conditions": {
+			"self_lacks_status_id": "st007"
+		  },
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st007",
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et003.name",
+	  "description_key": "trait.et003.desc"
+	},
+	"et004": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "hidden maid",
+	  "desc": "After this enemy acts, gain Stealth if absent.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_action_after",
+		  "conditions": {
+			"self_lacks_status_id": "st007"
+		  },
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st007",
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et004.name",
+	  "description_key": "trait.et004.desc"
+	},
+	"et005": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "half wall retreat",
+	  "desc": "When this enemy first drops to half health or below, the player can leave the battle.",
+	  "target_data": [],
+	  "triggers": [
+		{
+		  "event": "enemy_damage_taken",
+		  "conditions": {
+			"battle_escape_not_triggered_for_self": true,
+			"self_health_ratio_lte": 0.5
+		  },
+		  "actions": [
+			{
+			  "type": "enable_battle_escape"
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et005.name",
+	  "description_key": "trait.et005.desc"
+	},
+	"et006": {
+	  "source_kind": "enemy",
+	  "template_type": "timed_escape",
+	  "listener_scope": "owner_only",
+	  "name": "timed escape",
+	  "desc": "If it has never escaped before, start battle with 3 Escape. Lose 1 Escape after each action. Escape when Escape runs out, move to the nearest normal battle room, fully recover, gain max health, and learn an upgraded spell.",
+	  "target_data": [],
+	  "triggers": [],
+	  "timed_escape": {
+		"countdown_mode": "action_status",
+		"allow_multiple_escapes": false,
+		"max_escape_count": 1,
+		"max_health_bonus_per_escape": 4,
+		"marker_id": "pipeling",
+		"escape_status_id": "st016",
+		"escape_status_duration": 3,
+		"upgraded_hexes_after_escape": [
+		  "fh026"
+		]
+	  },
+	  "display_name_key": "trait.et006.name",
+	  "description_key": "trait.et006.desc"
+	},
+	"et007": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "gilded echo",
+	  "desc": "After this enemy resolves a spell, apply Resonance to each character actually affected by that spell.",
+	  "target_data": [
+		{
+		  "team": 0,
+		  "type": 0,
+		  "condition": {
+			"selector": "context_character_targets"
+		  },
+		  "index": 0
+		},
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"selector": "context_character_targets"
+		  },
+		  "index": 1
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_spell_resolved_after",
+		  "actions": [
+			{
+			  "type": "status_apply",
+			  "status_id": "st011",
+			  "target_index": [
+				0,
+				1
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et007.name",
+	  "description_key": "trait.et007.desc"
+	},
+	"et008": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "emberless recovery",
+	  "desc": "After this enemy acts, recover 4 health if it does not have Burn.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_action_after",
+		  "conditions": {
+			"self_lacks_status_id": "st002"
+		  },
+		  "actions": [
+			{
+			  "type": "health_change",
+			  "value": 4,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et008.name",
+	  "description_key": "trait.et008.desc"
+	},
+	"et009": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "frontline urge",
+	  "desc": "After this enemy takes damage, advance 1.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_damage_taken",
+		  "conditions": {
+			"exclude_damage_kind": "status_tick"
+		  },
+		  "actions": [
+			{
+			  "type": "advance",
+			  "steps": 1,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et009.name",
+	  "description_key": "trait.et009.desc"
+	},
+	"et010": {
+	  "source_kind": "enemy",
+	  "template_type": "generic",
+	  "listener_scope": "owner_only",
+	  "name": "impulsive",
+	  "desc": "When this enemy's countdown is reduced, advance 1.",
+	  "target_data": [
+		{
+		  "team": 1,
+		  "type": 0,
+		  "condition": {
+			"self": true
+		  },
+		  "index": 0
+		}
+	  ],
+	  "triggers": [
+		{
+		  "event": "enemy_countdown_reduced",
+		  "actions": [
+			{
+			  "type": "advance",
+			  "steps": 1,
+			  "target_index": [
+				0
+			  ]
+			}
+		  ]
+		}
+	  ],
+	  "display_name_key": "trait.et010.name",
+	  "description_key": "trait.et010.desc"
+	}
+  }
+}

@@ -1,0 +1,44 @@
+{
+	"equipments": {
+		"eq001": {
+			"equipment_name": "sword",
+			"texture_path": "res://Assets/dice-sword.png",
+			"slot_limit": 6,
+			"attack_bonus": 4,
+			"defense_bonus": 0,
+			"traits": "hex2摇出cut的时候攻击力+2"
+		},
+		"eq002": {
+			"equipment_name": "shield",
+			"texture_path": "res://Assets/dice-shield.png",
+			"slot_limit": 6,
+			"attack_bonus": 3,
+			"defense_bonus": 3,
+			"traits": "护盾+3"
+		},
+		"eq003": {
+			"equipment_name": "magicbook",
+			"texture_path": "res://Assets/dice-magicbook.png",
+			"slot_limit": 6,
+			"attack_bonus": 4,
+			"defense_bonus": 0,
+			"traits": "攻击力=hex2点数，fireball等法术攻击力+1"
+		},
+		"eq004": {
+			"equipment_name": "dagger",
+			"texture_path": "res://Assets/dice-dagger.png",
+			"slot_limit": 6,
+			"attack_bonus": 3,
+			"defense_bonus": 0,
+			"traits": "如果equipment dice上有1-3个骰面为dagger，每回合攻击2次"
+		},
+		"eq005": {
+			"equipment_name": "hammer",
+			"texture_path": "res://Assets/dice-hammer.png",
+			"slot_limit": 6,
+			"attack_bonus": 3,
+			"defense_bonus": 0,
+			"traits": "投出后下回合攻击力+2"
+		}
+	}
+}

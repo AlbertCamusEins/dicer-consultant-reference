@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bsxh4q6dt7rf1"
+valid=false
+
+[deps]
+
+source_file="res://CsvData/characters.csv"
+
+[params]
+
+compress=true
+delimiter=0

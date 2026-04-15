@@ -1,0 +1,264 @@
+{
+  "is_tutorial_battle": true,
+  "battle_type": 0,
+  "reroll_count": 0,
+  "enemies": [
+    {
+      "enemy_template_id": "fb003",
+      "unique_id": "tutorial_slime_0",
+      "new_max_health": 10,
+      "current_health": 10,
+      "hexes": [
+        "fh012"
+      ]
+    },
+    {
+      "enemy_template_id": "fb001",
+      "unique_id": "tutorial_rabbit_0",
+      "new_max_health": 12,
+      "current_health": 12,
+      "hexes": [
+        "fh012"
+      ]
+    }
+  ],
+  "embedded_faces": {
+    "frien": {
+      "0": {
+        "id": "fc001",
+        "character_name": "Lina",
+        "texture_path": "res://Assets/dice-Lina.png",
+        "health": 160,
+        "traits": [
+          "t001"
+        ],
+        "countdown": 3,
+        "slot_limit": 6,
+        "prime_hex_id": "fh001",
+        "peak_hex_id": "",
+        "soul_hex_id": ""
+      },
+      "1": {
+        "id": "fc002",
+        "character_name": "Slime",
+        "texture_path": "res://Assets/dice-Slime.png",
+        "health": 175,
+        "traits": [
+          "t002"
+        ],
+        "countdown": 3,
+        "slot_limit": 0,
+        "prime_hex_id": "fh002",
+        "peak_hex_id": "",
+        "soul_hex_id": ""
+      },
+      "2": {
+        "id": "fc001",
+        "character_name": "Lina",
+        "texture_path": "res://Assets/dice-Lina.png",
+        "health": 160,
+        "traits": [
+          "t001"
+        ],
+        "countdown": 3,
+        "slot_limit": 6,
+        "prime_hex_id": "fh001",
+        "peak_hex_id": "",
+        "soul_hex_id": ""
+      },
+      "3": {
+        "id": "fc002",
+        "character_name": "Slime",
+        "texture_path": "res://Assets/dice-Slime.png",
+        "health": 175,
+        "traits": [
+          "t002"
+        ],
+        "countdown": 3,
+        "slot_limit": 0,
+        "prime_hex_id": "fh002",
+        "peak_hex_id": "",
+        "soul_hex_id": ""
+      },
+      "4": {
+        "id": "fc001",
+        "character_name": "Lina",
+        "texture_path": "res://Assets/dice-Lina.png",
+        "health": 160,
+        "traits": [
+          "t001"
+        ],
+        "countdown": 3,
+        "slot_limit": 6,
+        "prime_hex_id": "fh001",
+        "peak_hex_id": "",
+        "soul_hex_id": ""
+      },
+      "5": {
+        "id": "fc002",
+        "character_name": "Slime",
+        "texture_path": "res://Assets/dice-Slime.png",
+        "health": 175,
+        "traits": [
+          "t002"
+        ],
+        "countdown": 3,
+        "slot_limit": 0,
+        "prime_hex_id": "fh002",
+        "peak_hex_id": "",
+        "soul_hex_id": ""
+      }
+    },
+    "equipment": {
+      "0": {
+        "id": "eq002",
+        "display_name_key": "equipment.eq002.name",
+        "equipment_name": "shield",
+        "texture_path": "res://Assets/dice-shield.png",
+        "slot_limit": 6,
+        "attack_bonus": 0,
+        "defense_bonus": 0,
+        "traits": [
+          "eqt002"
+        ],
+        "trait_descs": [
+          "When thrown, give 2 shield to the front ally."
+        ],
+        "trait_desc_keys": [
+          "equipment.eq002.trait_desc.0"
+        ],
+        "tags": [],
+        "forged_variant_id": "",
+        "is_forged": false
+      },
+      "1": {
+        "id": "eq004",
+        "display_name_key": "equipment.eq004.name",
+        "equipment_name": "dagger",
+        "texture_path": "res://Assets/dice-dagger.png",
+        "slot_limit": 6,
+        "attack_bonus": 2,
+        "defense_bonus": 0,
+        "traits": [],
+        "trait_descs": [
+          "While face up, attack +2."
+        ],
+        "trait_desc_keys": [
+          "equipment.eq004.trait_desc.0"
+        ],
+        "tags": [],
+        "forged_variant_id": "",
+        "is_forged": false
+      },
+      "2": {
+        "id": "eq002",
+        "display_name_key": "equipment.eq002.name",
+        "equipment_name": "shield",
+        "texture_path": "res://Assets/dice-shield.png",
+        "slot_limit": 6,
+        "attack_bonus": 0,
+        "defense_bonus": 0,
+        "traits": [
+          "eqt002"
+        ],
+        "trait_descs": [
+          "When thrown, give 2 shield to the front ally."
+        ],
+        "trait_desc_keys": [
+          "equipment.eq002.trait_desc.0"
+        ],
+        "tags": [],
+        "forged_variant_id": "",
+        "is_forged": false
+      },
+      "3": {
+        "id": "eq004",
+        "display_name_key": "equipment.eq004.name",
+        "equipment_name": "dagger",
+        "texture_path": "res://Assets/dice-dagger.png",
+        "slot_limit": 6,
+        "attack_bonus": 2,
+        "defense_bonus": 0,
+        "traits": [],
+        "trait_descs": [
+          "While face up, attack +2."
+        ],
+        "trait_desc_keys": [
+          "equipment.eq004.trait_desc.0"
+        ],
+        "tags": [],
+        "forged_variant_id": "",
+        "is_forged": false
+      },
+      "4": {
+        "id": "eq002",
+        "display_name_key": "equipment.eq002.name",
+        "equipment_name": "shield",
+        "texture_path": "res://Assets/dice-shield.png",
+        "slot_limit": 6,
+        "attack_bonus": 0,
+        "defense_bonus": 0,
+        "traits": [
+          "eqt002"
+        ],
+        "trait_descs": [
+          "When thrown, give 2 shield to the front ally."
+        ],
+        "trait_desc_keys": [
+          "equipment.eq002.trait_desc.0"
+        ],
+        "tags": [],
+        "forged_variant_id": "",
+        "is_forged": false
+      },
+      "5": {
+        "id": "eq004",
+        "display_name_key": "equipment.eq004.name",
+        "equipment_name": "dagger",
+        "texture_path": "res://Assets/dice-dagger.png",
+        "slot_limit": 6,
+        "attack_bonus": 2,
+        "defense_bonus": 0,
+        "traits": [],
+        "trait_descs": [
+          "While face up, attack +2."
+        ],
+        "trait_desc_keys": [
+          "equipment.eq004.trait_desc.0"
+        ],
+        "tags": [],
+        "forged_variant_id": "",
+        "is_forged": false
+      }
+    },
+    "hex": {
+      "0": {
+        "id": "fh001"
+      },
+      "1": {
+        "id": "fh002"
+      },
+      "2": {
+        "id": "fh001"
+      },
+      "3": {
+        "id": "fh002"
+      },
+      "4": {
+        "id": "fh001"
+      },
+      "5": {
+        "id": "fh002"
+      }
+    }
+  },
+  "tutorial_rewards": {
+    "gold": 80,
+    "equipment_ids": [
+      "eq004"
+    ],
+    "hex_ids": [
+      "fh001"
+    ]
+  }
+}

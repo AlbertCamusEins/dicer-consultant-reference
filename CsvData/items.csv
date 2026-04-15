@@ -1,0 +1,5 @@
+id,display_name_key,description_key,item_name,type,description,texture_path,price,effect_id,effect_params,max_uses,charge_type,current_charge,max_charge
+it001,,,Health Potion,2,Restores 10 HP.,res://Assets/item-potion.png,50,heal,"{""amount"": 10}",1,,,
+it002,,,Bomb,1,Deals 10 damage to an enemy.,res://Assets/item-bomb.png,75,damage,"{""amount"": 10}",-1,2,0,2
+it003,,,Strength Ring,0,Increases attack damage by 2.,res://Assets/item-ring.png,150,buff_damage,"{""amount"": 2}",,,,
+it004,,,Refresh Scroll,1,Gain 10 gold,res://Assets/item-scroll.png,100,gain_gold,"{""amount"": 10}",-1,1,0,3

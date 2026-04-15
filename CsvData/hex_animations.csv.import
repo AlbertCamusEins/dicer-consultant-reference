@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dy8tffwnep70w"
+
+[deps]
+
+files=["res://CsvData/hex_animations.hex.translation", "res://CsvData/hex_animations.animation.translation", "res://CsvData/hex_animations.asset.translation", "res://CsvData/hex_animations.frame.translation", "res://CsvData/hex_animations.frame.translation", "res://CsvData/hex_animations.frame.translation", "res://CsvData/hex_animations.duration.translation", "res://CsvData/hex_animations.scale.translation", "res://CsvData/hex_animations.scale.translation", "res://CsvData/hex_animations.offset.translation", "res://CsvData/hex_animations.offset.translation", "res://CsvData/hex_animations.anchor.translation", "res://CsvData/hex_animations.mirror.translation", "res://CsvData/hex_animations.target.translation", "res://CsvData/hex_animations.play.translation", "res://CsvData/hex_animations.legacy.translation", "res://CsvData/hex_animations.enabled.translation"]
+
+source_file="res://CsvData/hex_animations.csv"
+dest_files=["res://CsvData/hex_animations.hex.translation", "res://CsvData/hex_animations.animation.translation", "res://CsvData/hex_animations.asset.translation", "res://CsvData/hex_animations.frame.translation", "res://CsvData/hex_animations.frame.translation", "res://CsvData/hex_animations.frame.translation", "res://CsvData/hex_animations.duration.translation", "res://CsvData/hex_animations.scale.translation", "res://CsvData/hex_animations.scale.translation", "res://CsvData/hex_animations.offset.translation", "res://CsvData/hex_animations.offset.translation", "res://CsvData/hex_animations.anchor.translation", "res://CsvData/hex_animations.mirror.translation", "res://CsvData/hex_animations.target.translation", "res://CsvData/hex_animations.play.translation", "res://CsvData/hex_animations.legacy.translation", "res://CsvData/hex_animations.enabled.translation"]
+
+[params]
+
+compress=true
+delimiter=0

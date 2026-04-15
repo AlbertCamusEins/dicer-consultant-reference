@@ -1,0 +1,13 @@
+id,display_name_key,name,texture_path,base_health,traits,weight,equipment,hexes,countdown,health_per_occupied_face
+fb001,,Rabbit,res://Assets/enemy-rabbit.png,18,,2,"[""eq008""]","[""fh013""]",4,
+fb002,,Sheep,res://Assets/enemy-sheep.png,20,"[""et010""]",3,"[""eq009""]","[""fh023""]",3,
+fb003,,Slime,res://Assets/enemy-slime.png,15,,2,"[""eq002""]","[""fh012""]",2,
+fb006,,wandering puff,res://Assets/enemy-wandering puff.png,16,"[""et001""]",2,"[""eq002""]","[""fh022""]",3,
+fb007,,LANturn,res://Assets/enemy-LANturn.png,18,"[""et002""]",3,"[""eq001""]","[""fh027""]",3,
+fb008,,curtainer,res://Assets/enemy-curtainer.png,18,"[""et004""]",3,"[""eq001""]","[""fh024""]",3,
+fb009,,walld,res://Assets/enemy-walld.png,200,"[""et005""]",6,"[""eq001""]","[""fh012""]",3,
+fb010,,desc,res://Assets/enemy-desc.png,120,,8,"[""eq001""]","[""fh012""]",4,
+fb011,,a part of desc,res://Assets/enemy-a part of desc.png,20,,4,"[""eq001""]","[""fh012""]",3,20
+fb012,,pipeling,res://Assets/enemy-pipeling.png,19,"[""et006""]",4,"[""eq001""]","[""fh025""]",2,
+fb013,,caged bird,res://Assets/enemy-caged bird.png,80,"[""et007""]",7,"[""eq001""]","[""fh010"", ""fh011""]",3,
+fb004,,Sheef,res://Assets/enemy-sheef.png,25,"[""et008""]",5,"[""eq009""]","[""fh023""]",3,

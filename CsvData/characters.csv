@@ -1,0 +1,6 @@
+id,display_name_key,name,texture_path,base_health,experience,countdown,traits,prime_hex_id,peak_hex_id,soul_hex_id,slot_limit
+fc001,,Lina,res://Assets/dice-Lina.png,20,,3,"[""t001""]",fh001,,,6
+fc002,,Slime,res://Assets/dice-Slime.png,20,,3,"[""t002""]",fh002,,,
+fc003,,Bob,res://Assets/dice-Bob.png,20,,2,"[""t005""]",fh012,,,
+fc004,,Robin,res://Assets/dice-Robin.png,20,,3,"[""t004""]",fh004,,,
+fc005,,hog,res://Assets/dice-hog.png,20,,4,"[""t003""]",fh029,,,6

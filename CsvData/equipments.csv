@@ -1,0 +1,10 @@
+id,display_name_key,trait_desc_keys,equipment_name,texture_path,slot_limit,attack_bonus,defense_bonus,traits,trait_descs,enabled
+eq001,,,sword,res://Assets/dice-sword.png,6,0,0,"[""eqt005""]","[""Face up: gain 1 Ready. Ready: while Sword is face up, after an ally spell resolves, deal 4 damage to the front enemy, then consume Ready.""]",
+eq002,,,shield,res://Assets/dice-shield.png,6,0,0,"[""eqt002""]","[""When thrown, give 2 shield to the front ally.""]",
+eq003,,,magicbook,res://Assets/dice-magicbook.png,6,0,0,"[""eqt006""]","[""When thrown, give 1 Speedup to the front ally.""]",
+eq004,,,dagger,res://Assets/dice-dagger.png,6,2,0,,"[""While face up, attack +2.""]",
+eq005,,,hammer,res://Assets/dice-hammer.png,6,0,0,"[""eqt007""]","[""When thrown, apply 1 Lockout to self and the enemy face-up equipment. Lockout: throw and face-up effects are disabled, cannot stack, and is consumed after spell resolution.""]",
+eq006,,,hand_crossbow,res://Assets/dice-hand-crossbow.png,6,0,0,"[""eqt003""]","[""Ammo 1. Face up or ally action: consume ammo to deal 4. Face up while empty: reload 1.""]",FALSE
+eq007,,,bow,res://Assets/dice-bow.png,6,0,0,"[""eqt004""]","[""Face up: gain 1 charge up to 3. Reset after ally action or losing face up.""]",FALSE
+eq008,,,broken stopwatch,res://Assets/dice-broken stopwatch.png,6,0,0,"[""eqt008""]","[""While face up, every 3 countdown ticks, give 1 Speedup to the front ally.""]",
+eq009,,,fresh grass,res://Assets/dice-fresh grass.png,6,0,0,,"[""While face up, the holder's spell and trait healing is increased by 2.""]",

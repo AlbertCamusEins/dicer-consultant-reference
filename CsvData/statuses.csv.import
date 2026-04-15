@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://hhvrwqdxhdi0"
+valid=false
+
+[deps]
+
+source_file="res://CsvData/statuses.csv"
+
+[params]
+
+compress=true
+delimiter=0

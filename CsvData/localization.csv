@@ -1,0 +1,552 @@
+﻿key,zh_CN,en
+ui.main_menu.start_new_game,开始新游戏,Start New Game
+ui.main_menu.continue,继续,Continue
+ui.main_menu.settings,设置,Settings
+ui.main_menu.start_battle_test,开始战斗测试,Start Battle Test
+ui.main_menu.exit_game,退出游戏,Exit Game
+ui.map.floor,第 {floor} 层,Floor {floor}
+ui.map.title,地图,Map
+ui.map.get_ur_stuff,点击地图上的方块，拿点好玩意！,Click the cube to get something good!
+ui.map.new_face_reminder,获取新骰面，别忘了装上,You got a new die face. Don't forget to equip it.
+ui.map.custom_dice,定制骰子,Custom-dice
+ui.shop.title,商店,Shop
+ui.shop.gold,当前金币：{gold},Current Gold: {gold}
+ui.shop.reroll_price,刷新价格：{price},Reroll Price: {price}
+ui.shop.not_enough_gold_purchase,金币不足，无法购买。,Not enough gold to purchase.
+ui.shop.not_enough_gold_reroll,金币不足，无法刷新。,Not enough gold to reroll.
+ui.shop.back_to_map,返回地图,Back to Map
+ui.shop.reroll_offers,刷新商品,Reroll Offers
+ui.shop.sell,出售,Sell
+ui.pantry.title,茶水间,Pantry
+ui.pantry.no_run_data,没有可用的局内数据。,No run data.
+ui.pantry.rest_available,休息可用：回复 30% 最大生命,Rest available: Heal 30% max HP
+ui.pantry.rest_cooldown,休息冷却：剩余 {count} 场战斗,Rest cooldown: {count} battle(s) remaining
+ui.pantry.forge_points,锻造点：{count},Forge points: {count}
+ui.pantry.choose_action,请选择茶水间操作。,Choose a Pantry action.
+ui.pantry.rest_on_cooldown,休息仍在冷却中。,Rest is on cooldown.
+ui.pantry.no_characters_rest,当前没有可休息的角色。,No characters can rest right now.
+ui.pantry.rest_failed,无法让 {name} 休息。,Unable to rest {name}.
+ui.pantry.rest_success,已让 {name} 休息。,Rested {name}.
+ui.pantry.no_forge_points,没有可用的锻造点。,No forge points available.
+ui.pantry.no_forgeable_equipment,当前没有可锻造的装备。,No forgeable equipment available.
+ui.pantry.back_to_map,返回地图,Back to Map
+ui.hr.title,人事部,HR Dept
+ui.hr.no_run_data,没有可用的局内数据。,No run data.
+ui.hr.dispatching,正在外派 {name}（剩余 {count} 场战斗）,Dispatching {name} ({count} battles left)
+ui.hr.returned_reward,{name} 已返回。奖励：{gold} 金币,{name} returned. Reward: {gold} gold
+ui.hr.no_active_dispatch,当前没有外派任务,No active dispatch
+ui.hr.recruit_cost,招募（花费 {cost} 金币）,Recruit (Cost {cost} gold)
+ui.hr.no_candidates,当前没有可招募对象。,No candidates available.
+ui.hr.gold,金币：{gold},Gold: {gold}
+ui.hr.recruit_button,招募（{cost}G）,Recruit ({cost}G)
+ui.hr.owned,已拥有,Owned
+ui.hr.dispatching_short,外派中,Dispatching
+ui.hr.not_enough_gold,金币不足。当前：{gold},Not enough gold. Current: {gold}
+ui.hr.dispatch_title,外派,Dispatch
+ui.hr.dispatch_choose,选择一名角色进行外派（{count} 场战斗）,Choose one character to dispatch ({count} battles)
+ui.hr.no_characters_inventory,库存中没有可外派角色。,No recruitable characters in inventory.
+ui.hr.dispatch_button,外派,Dispatch
+ui.hr.embedded,已嵌入,Embedded
+ui.hr.returned,已返回,Returned
+ui.hr.embedded_blocked,{name} 已嵌入骰子，请先移除后再外派。,{name} is embedded on dice. Remove it before dispatch.
+ui.hr.claimed_gold,已领取 {gold} 金币,Claimed {gold} gold
+ui.hr.no_reward,没有可领取的奖励,No reward available
+ui.pause.return_to_menu,回主菜单,Return to Menu
+ui.pause.title,暂停,Pause
+ui.common.back,返回,Back
+ui.common.done,完成,Done
+ui.common.choose,选择,Choose
+ui.common.autofill,自动填充,Autofill
+ui.common.none,无,None
+ui.common.face_preview,骰面预览,Face Preview
+ui.custom_dice.title,定制骰子,Custom Dice
+ui.custom_dice.choose_die,选择一个骰子,Choose a Die
+ui.custom_dice.frien,伙伴骰,Friend Die
+ui.custom_dice.equipment,装备骰,Equipment Die
+ui.custom_dice.hex,咒术骰,Hex Die
+ui.custom_dice.return_to_map,返回地图,Return to Map
+ui.ac_dice_custom.title,行动骰定制,Action Dice Customization
+ui.ac_dice_custom.common_acts,普通行动,Common Acts
+ui.ac_dice_custom.uncommon_acts,稀有行动,Uncommon Acts
+ui.ac_2_dice_custom.title,稀有行动骰定制,Uncommon Action Dice Customization
+ui.frien_dice_custom.title,伙伴骰定制,Friend Dice Customization
+ui.frien_dice_custom.slot_limit_title,无法放置,Cannot Place Face
+ui.frien_dice_custom.slot_limit_body,该伙伴已达到可嵌入上限。,This friend has reached its slot limit.
+ui.hex_dice_custom.title,咒术骰定制,Hex Dice Customization
+ui.hex_dice_custom.slot_limit_title,无法放置,Cannot Place Face
+ui.hex_dice_custom.slot_limit_body,该咒术已达到可嵌入上限。,This hex has reached its slot limit.
+ui.equipment_dice_custom.title,装备骰定制,Equipment Dice Customization
+ui.equipment_dice_custom.slot_limit_title,无法放置,Cannot Place Face
+ui.equipment_dice_custom.slot_limit_body,该装备已达到可嵌入上限。,This equipment has reached its slot limit.
+ui.player_info.terminal,玩家终端,Player Terminal
+ui.player_info.tab_general,概览,General
+ui.player_info.tab_friends,伙伴,Friends
+ui.player_info.tab_hexes,咒术,Hexes
+ui.player_info.tab_equipments,装备,Equipments
+ui.player_info.tab_items,物品,Items
+ui.player_info.tab_tasks,任务,Tasks
+ui.battle.face_value,朝上点数,Face Value
+ui.battle.ammo,弹药：,Ammo:
+ui.battle.bow_stacks,蓄力层数：,Bow Stacks:
+ui.battle.status_separator,，,","
+ui.battle.status_dot_format,{status}（{stacks}），剩余{ticks}次,"{status} ({stacks}), {ticks} tick(s) left"
+ui.battle.status_stacks_format,{status}（{stacks}）,{status} ({stacks})
+ui.battle.status_duration_format,{status}，剩余{ticks}次,"{status}, {ticks} left"
+ui.battle.run,逃跑！,Run!
+ui.battle_result.good_stuff,好东西!,Good Stuff!
+ui.confirm_switch.replace,"将 {old_name}
+替换为 {new_name}？","Replace {old_name}
+with {new_name}?"
+ui.confirm_switch.old,旧物品：{name},Old: {name}
+ui.confirm_switch.new,新物品：{name},New: {name}
+char.fc001.name,丽娜,Lina
+char.fc002.name,史莱姆,Slime
+char.fc003.name,鲍勃,Bob
+char.fc004.name,罗宾,Robin
+char.fc005.name,霍格,Hog
+equipment.eq001.name,长剑,Sword
+equipment.eq001.trait_desc.0,剑面朝上：获得1层就绪。只要长剑保持朝上，友方法术结算后对前排敌人造成4点伤害，并消耗就绪。,"Face up: gain 1 Ready. Ready: while Sword is face up, after an ally spell resolves, deal 4 damage to the front enemy, then consume Ready."
+equipment.eq002.name,盾牌,Shield
+equipment.eq002.trait_desc.0,正面投出时：给前排友方2点护盾。,"When thrown, give 2 shield to the front ally."
+equipment.eq003.name,魔导书,Magicbook
+equipment.eq003.trait_desc.0,正面投出时：给前排友方1层加速。,"When thrown, give 1 Speedup to the front ally."
+equipment.eq004.name,匕首,Dagger
+equipment.eq004.trait_desc.0,朝上时：攻击力+2。,"While face up, attack +2."
+equipment.eq005.name,战锤,Hammer
+equipment.eq005.trait_desc.0,正面投出时：给自身和敌方朝上装备各施加1层锁定。锁定：无法触发投掷和朝上效果，不能叠加，并在法术结算后消耗。,"When thrown, apply 1 Lockout to self and the enemy face-up equipment. Lockout: throw and face-up effects are disabled, cannot stack, and is consumed after spell resolution."
+equipment.eq006.name,手弩,Hand Crossbow
+equipment.eq006.trait_desc.0,弹药 1。朝上或友军行动时消耗弹药造成 4 点伤害；空弹朝上时装填 1 点弹药。,Ammo 1. Face up or ally action: consume ammo to deal 4. Face up while empty: reload 1.
+equipment.eq007.name,长弓,Bow
+equipment.eq007.trait_desc.0,朝上时获得 1 层蓄力，最多 3 层；友军行动后或失去朝上时重置。,Face up: gain 1 charge up to 3. Reset after ally action or losing face up.
+equipment.eq008.name,破损的秒表,Broken Stopwatch
+equipment.eq008.trait_desc.0,处于正面时，每倒数 3 次，给前排友军 1 层加速。,"While face up, every 3 countdown ticks, give 1 Speedup to the front ally."
+hex.fh001.name,火球,Fireball
+hex.fh001.desc,对正面朝上的敌人造成伤害并施加灼烧。,Deal damage to the face-up enemy and apply Burn.
+hex.fh002.name,掩护,Cover
+hex.fh002.desc,为我方朝上角色恢复 6 点生命，溢出的治疗转化为护盾。,Restore 6 health to the allied face-up character. Excess healing becomes shield.
+hex.fh003.name,数日子,Countpuff
+hex.fh003.desc,为正面敌人施加其剩余倒数的中毒层数,Apply poisoned based on face-up enemy's remaining countdown
+hex.fh004.name,锁定目标,Target Locked
+hex.fh004.desc,迅捷。对正面敌人造成4点伤害。,Swift.Deal 4 damage to face-up enemy.
+hex.fh005.name,治疗,Heal
+hex.fh005.desc,侧面：治疗正面友军2；正面：改为治疗8.,Heal an allied character.
+hex.fh006.name,病入膏肓,Toxic Time
+hex.fh006.desc,为正面朝上的敌人施加1层中毒和1层加速,Apply 1poisoned and 1 speedup to face-up enemy.
+hex.fh007.name,点燃,Ignite
+hex.fh007.desc,迅捷。为正面敌人施加2回合灼烧,Swift. Apply 1 layer 2-tick burn to face-up enemy.
+hex.fh008.name,添柴,Stoke
+hex.fh008.desc,为正面敌人施加1层3回合灼烧。向上翻转法术骰。,Apply 1 stack of 3-tick burn to the face-up enemy. Up-flip hex dice.
+hex.fh009.name,暖意,Warmth
+hex.fh009.desc,为正面友军恢复等同于正面敌人灼烧层数乘 4 的生命。,Restore health to the face-up ally equal to the face-up enemy's Burn stacks times 4.
+hex.fh010.name,铁律咏叹,Iron Chant
+hex.fh010.desc,所有玩家角色倒计时 +1 一次。,Grant 1 stack of slow to all allies.
+hex.fh011.name,撞笼,Cage crash
+hex.fh011.desc,对后排玩家角色造成8点伤害。,Deal 8 damage to the back-row player character.
+hex.fh012.name,普通攻击,Attack
+hex.fh012.desc,对正面敌人造成伤害。,Deal 6 damage to target faced up.
+hex.fh013.name,吐口水,Spit
+hex.fh013.desc,迅捷。对正面敌人造成伤害,Swift. Deal 2 damage to the face-up enemy.
+hex.fh014.name,扇巴掌,Slap
+hex.fh014.desc,对正面敌人造成伤害并向左翻转角色骰。,Deal 4 to face-up enemy. Left-flip enemy frien dice.
+hex.fh015.name,时间抓握,Grasp Time
+hex.fh015.desc,我方朝上角色 -1 倒计时，敌方朝上角色 +1倒计时。,Reduce the face-up allied character and face-up enemy countdown by 1.
+hex.fh016.name,火焰缠身,Pyresnare
+hex.fh016.desc,为正面敌人施加 1 层 3 回合灼烧和 1 层迟缓。,Apply 1 stack of 3-tick Burn and 1 Slow to the face-up enemy.
+hex.fh017.name,火焰穿刺,Flame Pierce
+hex.fh017.desc,对正面敌人造成4加燃烧层数2倍的伤害,Deal 4 plus 2 times of burn stack to the face-up enemy.
+hex.fh018.name,夜鸩,Nightshade
+hex.fh018.desc,对正面敌人施加1层中毒。给予本法术隐匿。,Apply 1 stack of poisoned to face-up enemy. Grant self stealth.
+hex.fh019.name,缓刑,Probation
+hex.fh019.desc,对正面敌人施加1层中毒和1层减速,Apply 1 poisoned and 1 slow to face-up enemy.
+hex.fh020.name,毒蘑菇,Puffcaps
+hex.fh020.desc,对全体敌人恢复2点生命，然后施加1层中毒。,Heal all enemies 2. Apply 1 poisoned to all enemies.
+hex.fh021.name,重拳,Heavy Punch
+hex.fh021.desc,对前排敌人造成14点伤害。给予自身1层减速。,Deal 14 damage to the face-up enemy. Grant self 1 stack of slow.
+hex.fh022.name,喷洒孢子,Spread Spore
+hex.fh022.desc,对前排敌人造成4点伤害并给予1层中毒。,Deal 4 and grant 1 stack of poisoned to front enemy.
+hex.fh023.name,啃咬,Bite
+hex.fh023.desc,对前排敌人造成6点伤害。恢复自身4点血量。,Deal 6 to front enemy. Restore 4 health.
+hex.fh024.name,影掠,haunt
+hex.fh024.desc,对前排敌人造成6点伤害。若自身拥有潜行，则改为造成12点伤害。,"Deal 6 damage to the front enemy. If self has Stealth, deal 12 instead."
+hex.fh025.name,钻击,drill
+hex.fh025.desc,对前排敌人造成8点伤害。自身后退1，并获得暴露。,Deal 8 damage to the front enemy. Retreat 1. Gain Expose.
+hex.fh026.name,强化钻击,drill plus
+hex.fh026.desc,对前排敌人造成12点伤害。自身后退1。,Deal 12 damage to the front enemy. Retreat 1.
+hex.fh027.name,眩晕,Daze
+hex.fh027.desc,对所有敌人造成3点伤害。,Deal 3 to all enemies.
+hex.fh029.name,泡泡,Bubbles
+hex.fh029.desc,对前排敌人造成8点伤害，并施加1层迟缓。,Deal 8 and grant 1 stack of slow to front enemy.
+status.st001.name,眩晕,Stun
+status.st001.desc,跳过下一次行动。,Skip next action.
+status.st002.name,灼烧,Burn
+status.st002.desc,周期性受到伤害。,Take periodic damage.
+status.st003.name,掩护,Cover
+status.st003.desc,减少受到的伤害。,Reduce incoming damage.
+status.st004.name,冻结,Frozen
+status.st004.desc,禁用被冻结骰面的交互。,Disable the frozen dice face interactions.
+status.st005.name,易伤,Vulnerable
+status.st005.desc,增加受到的伤害。,Increase incoming damage.
+status.st006.name,锋锐,Sharp
+status.st006.desc,提高武器造成的伤害。,Increase outgoing weapon damage.
+status.st007.name,潜行,Stealth
+status.st007.desc,下次友方掷角色骰时，若有其他可用面则排除该角色。,Exclude this character from the next friend-dice roll if other faces are available.
+status.st008.name,压制,Pressed
+status.st008.desc,武器伤害提升 50%。,Increase outgoing weapon damage by 50%.
+status.st009.name,中毒,Poisoned
+status.st009.desc,持续时间无限，可无限叠加。中毒目标施法后受到每层 6 点伤害，然后清空中毒层数。,"Infinite duration and unlimited stacks. After the poisoned unit acts, it takes 6 damage per stack, then clears all Poison stacks."
+status.st010.name,明亮,Bright
+status.st010.desc,Bright Delight 使用的可见切换状态。,A visible toggle status used by Bright Delight.
+status.st011.name,共振,Resonance
+status.st011.desc,受到直接法术伤害时，清除所有共振并向其他共振单位回响一半伤害。,"When this unit would take direct spell damage, clear Resonance and echo half damage to other resonant units."
+status.st012.name,迟缓,Slow
+status.st012.desc,施加时令该单位倒计时 +1。,"On apply, increase this unit's countdown by 1 once."
+status.st013.name,加速,Speedup
+status.st013.desc,施加时令该单位倒计时 -1。,"On apply, reduce this unit's countdown by 1 once."
+status.st014.name,潜行,Stealth
+status.st014.desc,下次掷装备骰时，若有其他可用面则排除该装备面。,Exclude this equipment face from the next equipment-die roll if other faces are available.
+status.st015.name,潜行,Stealth
+status.st015.desc,下次掷法术骰时，若有其他可用面则排除该法术面。,Exclude this hex face from the next hex-die roll if other faces are available.
+status.st016.name,逃跑,Escape
+status.st016.desc,每次行动后减少 1；归零时逃跑。,Lose 1 after each action. Escape when it reaches 0.
+status.st017.name,暴露,Expose
+status.st017.desc,下次掷角色骰时，该单位必定出现在正面。,This character must appear face up on the next friend-dice roll.
+status.st018.name,就绪,Ready
+status.st018.desc,持续时间无限。该状态属于长剑装备，并同步到所有长剑骰面。剑面朝上时，下次友方法术结算后对前排敌人造成4点伤害，然后消耗该状态。,"Infinite duration. While Sword is face up, after the next ally spell resolves, deal 4 damage to the front enemy, then consume this status."
+status.st019.name,闭锁,Lockout
+status.st019.desc,持续时间无限。该状态属于装备，并同步到所有匹配的装备骰面。锁定期间无法触发投掷和朝上效果，且不能叠加；在所属方下一次法术结算后移除。,Infinite duration. This status is mirrored across matching equipment faces. Throw and face-up effects are disabled while Lockout is present; it cannot stack and is consumed after the owning side resolves its next spell.
+status.st001.hover,该角色的下一次行动会被跳过。,This character will skip its next action.
+status.st002.hover,燃烧{stacks}：该角色在下{duration}次倒数后，每次受到{total_tick_damage}点伤害。,"For the next {duration} countdowns, this character takes {total_tick_damage} damage each time."
+status.st003.hover,该角色在接下来的{duration}次倒数内每次受到的伤害减少{stacks}点。,"For the next {duration} countdowns, this character takes {stacks} less damage each time."
+status.st004.hover,该骰面在接下来的{duration}次倒数内无法翻转或投掷。,"For the next {duration} countdowns, this die face cannot be flipped or rolled."
+status.st005.hover,该角色在接下来的{duration}次倒数内受到的伤害提高。,"For the next {duration} countdowns, this character takes increased damage."
+status.st006.hover,当前骰面造成的武器伤害提高{stacks}次结算，每次额外+{outgoing_damage_add}。,This face gains +{outgoing_damage_add} weapon damage while active.
+status.st007.hover,隐蔽：该角色会在下一次友方角色骰投掷时被排除。,This character will be excluded from the next allied character die roll.
+status.st008.hover,当前骰面的武器伤害提高至{outgoing_damage_mul}倍。,This face deals {outgoing_damage_mul}x weapon damage while active.
+status.st009.hover,中毒{stacks}：该角色在下次施法后，受到{total_tick_damage}点伤害，随后移除所有中毒。,"After each action, this character takes {total_tick_damage} damage, then clears this status."
+status.st010.hover,该角色当前处于明亮状态。,This character is currently Bright.
+status.st011.hover,该角色当前处于共鸣状态，会在受到直接法术伤害时触发连锁效果。,This character is currently Resonant and will trigger a chain effect when taking direct spell damage.
+status.st012.hover,该角色当前倒数额外+{on_apply_self_countdown_delta}，并在下{duration}次行动后移除。,This character currently has {on_apply_self_countdown_delta} extra countdown and removes it after {duration} action.
+status.st013.hover,该角色当前倒数额外{on_apply_self_countdown_delta}，并在下{duration}次行动后移除。,This character currently has {on_apply_self_countdown_delta} countdown adjustment and removes it after {duration} action.
+status.st014.hover,该装备骰面会在下一次装备骰投掷时被排除。,This equipment face will be excluded from the next equipment die roll.
+status.st015.hover,该法术骰面会在下一次法术骰投掷时被排除。,This hex face will be excluded from the next hex die roll.
+status.st016.hover,该角色会在下{duration}次行动后逃离战斗。,This character will escape after {duration} more actions.
+status.st017.hover,该角色在下一次友方角色骰投掷时必定朝上。,This character is guaranteed to appear face up on the next allied character die roll.
+status.st018.hover,当前匹配的剑类装备已就绪，下一次友方法术结算会对前排敌人追加伤害后移除。,"Matching sword equipment is Ready. After the next allied spell resolves, it deals bonus damage, then is consumed."
+status.st019.hover,当前装备骰面被锁定，无法触发投掷或朝上效果，直到下一次己方法术结算后移除。,This equipment face is Lockout and cannot trigger throw or face-up effects until the next allied spell resolves.
+item.it001.name,生命药水,Health Potion
+item.it001.desc,恢复 10 点生命。,Restores 10 HP.
+item.it002.name,炸弹,Bomb
+item.it002.desc,对一个敌人造成 10 点伤害。,Deals 10 damage to an enemy.
+item.it003.name,力量戒指,Strength Ring
+item.it003.desc,攻击伤害提高 2 点。,Increases attack damage by 2.
+item.it004.name,刷新卷轴,Refresh Scroll
+item.it004.desc,获得 10 金币。,Gain 10 gold.
+trait.t001.name,引燃,Kindle
+trait.t001.desc,当 Lina 被投出并朝上时，使所有处于燃烧的敌人获得 1 层燃烧。,"When Lina is rolled face up, each burning enemy gains 1 Burn stack."
+trait.t002.name,腐蚀,Corrosive
+trait.t002.desc,该角色受到直接法术伤害时，对伤害来源施加 2 层中毒。,"When this character takes direct spell damage, apply 2 Poison to the damage source."
+trait.t003.name,拒止,Denial
+trait.t003.desc,每场战斗首次受到的减益状态无效。,Immune to the first debuff status applied to this unit each battle.
+trait.t004.name,闪避,Dodging
+trait.t004.desc,Robin 施法结算后，使自己获得潜行。,"After Robin resolves a spell, gain Stealth."
+trait.t005.name,钢铁之心,Steelheart
+trait.t005.desc,Bob 施法结算后，为自己获得 2 点护盾。,"After Bob resolves a spell, gain 2 shield."
+trait.eqt001.name,匕首投掷,Dagger
+trait.eqt001.desc,3 次使用。朝上时投掷造成 4 点伤害；友军获得潜行时恢复 1 次使用。,"3 uses. Face up: throw for 4 damage. When an ally gains Stealth, recover 1 use."
+trait.eqt002.name,格挡,Shield
+trait.eqt002.desc,朝上时进入架盾状态，抵消下一次敌方行动伤害。,Face up: arm. Negate the next enemy action damage against allies.
+trait.eqt003.name,装填手弩,Hand Crossbow
+trait.eqt003.desc,弹药 1。朝上或友军行动时消耗弹药造成 4 点伤害；空弹朝上时装填。,Ammo 1. Face up or ally action: consume ammo to deal 4. Face up while empty: reload 1.
+trait.eqt004.name,蓄力长弓,Bow
+trait.eqt004.desc,朝上时获得 1 层蓄力；友军行动后或失去朝上时重置。,Face up: gain 1 charge. Reset after ally action or when losing face up.
+trait.eqt005.name,就绪之剑,Ready Sword
+trait.eqt005.desc,剑面朝上：获得1层就绪。只要剑保持朝上，友方法术结算后对前排敌人造成4点伤害，并消耗就绪。,"Face up: gain 1 Ready. While Sword stays face up, after an ally spell resolves, deal 4 damage to the front enemy, then consume Ready."
+trait.eqt006.name,魔法书,Magicbook
+trait.eqt006.desc,投掷时：给前排友方1层加速。,"When thrown, give 1 Speedup to the front ally."
+trait.eqt007.name,锤子,Hammer
+trait.eqt007.desc,投掷时：给自身和敌方前排装备各施加1层锁定。锁定：无法触发投掷和朝上效果，不能叠加，并在法术结算后消耗。,"When thrown, apply 1 Lockout to self and the enemy face-up equipment. Lockout: throw and face-up effects are disabled, cannot stack, and is consumed after spell resolution."
+trait.eqt008.name,破损的秒表,Broken Stopwatch
+trait.eqt008.desc,处于正面时，每倒数 3 次，给前排友军 1 层加速。,"While face up, every 3 countdown ticks, give 1 Speedup to the front ally."
+quest.q_fireball_training.title,火球训练,Fireball Training
+quest.q_first_dispatch.title,首次外派,First Dispatch
+quest.q_hunt_order.title,狩猎指令,Hunt Order
+quest.q_trial_kit.title,试用工具包,Trial Kit
+quest.q_collateral_trial.title,抵押试炼,Collateral Trial
+ui.settings.title,设置,Settings
+ui.settings.tab_gameplay,游戏,Gameplay
+ui.settings.tab_video,画面,Video
+ui.settings.tab_sound,声音,Sound
+ui.settings.tab_interaction,交互,Interaction
+ui.settings.language,语言,Language
+ui.settings.language_name.zh_cn,简体中文,Simplified Chinese
+ui.settings.language_name.en,English,English
+ui.settings.double_dice_speed,骰子动画2倍速,Double dice animation speed (2x)
+ui.settings.fullscreen,全屏,Fullscreen
+ui.settings.resolution,分辨率,Resolution
+ui.settings.replay_battle_tutorial,重放战斗教程,Replay battle tutorial
+ui.settings.master_volume,主音量,Master Volume
+ui.settings.music_volume,音乐音量,Music Volume
+ui.settings.sfx_volume,音效音量,SFX Volume
+ui.settings.ambient_volume,环境音量,Ambient Volume
+ui.settings.mute_unfocused,后台静音,Mute when unfocused
+ui.settings.skip_battle_tutorial,跳过战斗教程,Skip battle tutorial
+ui.settings.auto_claim_battle_gold,战斗后，自动领取金币,Auto claim gold after battle
+ui.settings.interaction_placeholder,交互设置暂未开放,Interaction settings are not available yet.
+ui.settings.cancel,返回,Back
+ui.settings.apply,应用,Apply
+ui.battle_tutorial.title,战斗教程,Battle Tutorial
+ui.battle_tutorial.prev,上一页,Previous
+ui.battle_tutorial.next,下一页,Next
+ui.battle_tutorial.finish,完成,Finish
+ui.battle_tutorial.skip,跳过,Skip
+ui.battle_tutorial.page_indicator,{current} / {total},{current} / {total}
+ui.battle_tutorial.page1.title,欢迎,Welcome
+ui.battle_tutorial.page1.body,这里就是战斗界面。先认识一下战斗中最重要的 UI 区域。,This screen is the battle field. Start by learning where the core UI information is displayed.
+ui.battle_tutorial.page1.teams,左侧是玩家队伍，右侧是敌方队伍。,"Left is your team, right is the enemy team."
+ui.battle_tutorial.page1.health,单位附近会显示生命值等战斗信息。,Each unit shows current HP and related combat info nearby.
+ui.battle_tutorial.page1.countdown,倒数决定各单位距离行动还有多远。,Countdown controls when units act.
+ui.battle_tutorial.page1.dice_board,中央的骰子盘是战斗中投掷所有骰子的地方。,The center dice board is where all battle dice are rolled.
+ui.battle_tutorial.page1.face_value,这里会显示六颗骰子的朝上点数。,This area shows the face-up values of all six dice.
+ui.battle_tutorial.page1.status,状态与提示信息会显示在角色周围和悬浮说明区。,Status and trait hints appear around units and the hover panel.
+ui.battle_tutorial.page1.items,左下角是战斗中的道具区。,Battle items are placed in the lower-left corner.
+ui.battle_tutorial.page2.title,骰子区,Dice Area
+ui.battle_tutorial.page2.body,骰子区是战斗的核心。投掷会改变朝上的面，也会改变你和敌人当前可用的效果。,The dice area is the heart of battle. Rolling changes which faces are up and what effects become available.
+ui.battle_tutorial.page2.click_roll,点击任意一颗骰子即可投掷。,Click a die to roll it.
+ui.battle_tutorial.page2.hover_face,把鼠标移动到骰子上，可以查看当前正面的介绍。,Hover a die to read the current face description.
+ui.battle_tutorial.page2.any_dice,你可以投掷任意一颗骰子，包括敌方的骰子。,"You may roll any single die, including enemy dice."
+ui.battle_tutorial.page3.title,倒数,Countdown
+ui.battle_tutorial.page3.body,倒数会持续推动战斗节奏。,Countdown is shared pressure across the whole battle.
+ui.battle_tutorial.page3.countdown,带有倒数的单位会随着倒数减少而逐步接近行动。,Units with countdowns get closer to acting as the countdown decreases.
+ui.battle_tutorial.page3.roll,每投掷一次，所有倒数都会减少 1。,"Every time you roll once, all countdown values are reduced by 1."
+ui.battle_tutorial.page4.title,角色骰,Character Die
+ui.battle_tutorial.page4.body,"角色骰装载的是角色。
+
+朝上的面表示当前朝上的角色是谁。一般情况下，朝上的角色会受到敌方法术的攻击。
+
+投掷角色骰可以切换当前出面的角色，从而改变受击目标。一些角色的特性会在他们被投出时触发。","Character dice load your team members.
+
+The face showing on top tells you which character is currently face up.
+
+Rolling this die changes which character is active and which character-based traits or actions are available next."
+ui.battle_tutorial.page5.title,装备骰,Equipment Die
+ui.battle_tutorial.page5.body,"装备骰装载的是装备。
+
+朝上的面表示当前朝上的装备是什么，施放法术会应用当前装备的攻防加成。攻击加成会增幅法术伤害，防御加成会增加角色获得的护甲值。
+
+投掷装备骰可以切换当前支援队伍的装备，打开不同的攻击或辅助路线，或触发某些即时效果。","Equipment dice load weapons and gear.
+
+The top face tells you which piece of equipment is currently face up.
+
+Rolling this die changes the equipment currently supporting the team and can open a different attack or utility line."
+ui.battle_tutorial.page6.title,法术骰,Spell Die
+ui.battle_tutorial.page6.body,"法术骰装载的是法术。
+
+朝上的面表示当前朝上的法术是什么，即下次倒数结束时施放的法术。请注意，法术会被倒数最先归零的角色施放。
+
+投掷法术骰可以切换你准备使用的法术，以适应当前战况。","Spell dice load spells.
+
+The top face tells you which spell is currently face up.
+
+Rolling this die changes the spell you are preparing to use and lets you adapt to the current battle state."
+ui.battle_tutorial.page7.title,胜利与失败,Victory and Defeat
+ui.battle_tutorial.page7.body,当一方无法继续战斗时，这场战斗就会结束。,A battle ends when one side can no longer continue.
+ui.battle_tutorial.page7.victory,胜利：在我方全灭前击败所有敌人。,Victory: defeat all enemies before your team collapses.
+ui.battle_tutorial.page7.defeat,失败：如果我方全部倒下，就会输掉战斗。,"Defeat: if your side is wiped out, the battle is lost."
+enemy.fb001.name,Rabbit,Rabbit
+enemy.fb002.name,Sheep,Sheep
+enemy.fb003.name,Slime,Slime
+enemy.fb004.name,希夫,Sheef
+enemy.fb006.name,wandering puff,wandering puff
+enemy.fb007.name,LANturn,LANturn
+enemy.fb008.name,curtainer,curtainer
+enemy.fb009.name,walld,walld
+enemy.fb010.name,desc,desc
+enemy.fb011.name,a part of desc,a part of desc
+enemy.fb012.name,pipeling,pipeling
+enemy.fb013.name,caged bird,caged bird
+enemy.boss001.name,Grand Slime,Grand Slime
+enemy.boss002.name,King Rabbit,King Rabbit
+trait.et001.name,toxic spores,toxic spores
+trait.et001.desc,被击杀时，给击杀者 1 层中毒。,"When killed, apply 1 Poison to the killer."
+trait.et002.name,bright delight,bright delight
+trait.et002.desc,"When damaged, gain Bright if absent and apply Speedup to all enemies. Otherwise remove Bright.","When damaged, gain Bright if absent and apply Speedup to all enemies. Otherwise remove Bright."
+trait.et003.name,undefined,undefined
+trait.et003.desc,"When this enemy's countdown is reduced, gain Stealth if absent.","When this enemy's countdown is reduced, gain Stealth if absent."
+trait.et004.name,hidden maid,hidden maid
+trait.et004.desc,"After this enemy acts, gain Stealth if absent.","After this enemy acts, gain Stealth if absent."
+trait.et005.name,half wall retreat,half wall retreat
+trait.et005.desc,"When this enemy first drops to half health or below, the player can leave the battle.","When this enemy first drops to half health or below, the player can leave the battle."
+trait.et006.name,定时逃跑,timed escape
+trait.et006.desc,若此前未逃跑过，则战斗开始时获得 3 层逃跑。每次行动后失去 1 层逃跑；逃跑归零时，逃到最近的普通战斗房间，回满血、提升最大生命，并获得升级法术。,"If it has never escaped before, start battle with 3 Escape. Lose 1 Escape after each action. Escape when Escape runs out, move to the nearest normal battle room, fully recover, gain max health, and learn an upgraded spell."
+trait.et007.name,gilded echo,gilded echo
+trait.et007.desc,"After this enemy resolves a spell, apply Resonance to each character actually affected by that spell.","After this enemy resolves a spell, apply Resonance to each character actually affected by that spell."
+trait.et008.name,无烬恢复,emberless recovery
+trait.et008.desc,该敌人行动后回复4点生命；若处于灼烧则失去该效果。,"After this enemy acts, recover 4 health; lose this effect while Burning."
+trait.ht001.name,scorching echo,scorching echo
+trait.ht001.desc,"After fireball resolves, deal 1 extra damage to each enemy character actually affected by it.","After fireball resolves, deal 1 extra damage to each enemy character actually affected by it."
+trait.ht002.name,swift,swift
+trait.ht002.desc,"Cast this hex immediately when it is rolled face up. If countdown also reaches zero from the same roll, this hex only resolves once.","Cast this hex immediately when it is rolled face up. If countdown also reaches zero from the same roll, this hex only resolves once."
+ui.main_menu.title,Dicer,Dicer
+ui.select_initial_friend.title,选择初始伙伴,Select Initial Friend
+ui.room.good_stuff,好东西!,Good Stuff!
+ui.player_info.friends_count,伙伴数量：{count},Friends: {count}
+ui.player_info.equipments_count,装备数量：{count},Equipments: {count}
+ui.player_info.hexes_count,咒术数量：{count},Hexes: {count}
+ui.player_info.gold_count,金币：{count},Gold: {count}
+ui.player_info.character_level,{name} Lv.{level},{name} Lv.{level}
+ui.player_info.hp,生命,HP
+ui.player_info.exp,经验,EXP
+ui.player_info.no_run_data,没有可用的局内数据。,No run data.
+ui.player_info.tasks_summary,任务总览：可接 {offers} / 进行中 {active} / 待提交 {pending} / 已完成 {completed} / 已失败 {failed},Tasks: offers {offers} / active {active} / pending {pending} / completed {completed} / failed {failed}
+ui.player_info.pending_submit,待提交任务,Pending Submission
+ui.player_info.pending_reward,{name}：可领取 {gold} 金币,{name}: claim {gold} gold
+ui.player_info.no_active_tasks,当前没有进行中的任务。,No active tasks.
+ui.player_info.active_tasks,进行中的任务,Active Tasks
+ui.player_info.bullet_name,• {name},• {name}
+ui.player_info.task_progress,{label}：{current}/{target},{label}: {current}/{target}
+ui.player_info.completed_none,当前没有已完成任务。,No completed tasks.
+ui.player_info.completed_tasks,已完成任务,Completed Tasks
+ui.player_info.no_hexes,当前没有咒术。,No hexes.
+ui.player_info.no_equipments,当前没有装备。,No equipments.
+ui.player_info.equipment_stats,攻击 +{attack} / 防御 +{defense},ATK +{attack} / DEF +{defense}
+ui.player_info.no_items,当前没有物品。,No items.
+ui.player_info.item_type,类型：{type},Type: {type}
+ui.player_info.no_trait_description,暂无词条说明。,No trait description.
+ui.player_info.hex_effects,效果数：{count},Effects: {count}
+ui.player_info.hex_targets,目标数：{count},Targets: {count}
+ui.player_info.hex_slots,槽位上限：{count},Slot limit: {count}
+ui.player_info.item_uses,使用次数：{current}/{max},Uses: {current}/{max}
+ui.player_info.item_charge,充能：{current}/{max},Charge: {current}/{max}
+ui.player_info.item_type_passive,被动,Passive
+ui.player_info.item_type_active,主动,Active
+ui.player_info.item_type_consumable,消耗品,Consumable
+ui.player_info.item_type_unknown,未知,Unknown
+ui.battle.choose_target,请选择目标。,Choose a target.
+ui.battle.escape_available,{name} 正在试图逃跑！,{name} is trying to escape!
+ui.battle.enemy_escaped,{name} 已逃跑！,{name} has escaped!
+ui.battle_statuses.title,战斗状态,Battle Statuses
+ui.battle_statuses.tab_characters,我方角色,Allied Characters
+ui.battle_statuses.tab_equipments,我方装备,Allied Equipments
+ui.battle_statuses.tab_hexes,我方法术,Allied Hexes
+ui.battle_statuses.tab_enemy_characters,敌方角色,Enemy Characters
+ui.battle_statuses.tab_enemy_equipments,敌方装备,Enemy Equipments
+ui.battle_statuses.tab_enemy_hexes,敌方法术,Enemy Hexes
+ui.battle_statuses.empty_characters,当前没有我方角色状态可显示。,No allied character statuses to display.
+ui.battle_statuses.empty_equipments,当前没有我方装备状态可显示。,No allied equipment statuses to display.
+ui.battle_statuses.empty_hexes,当前没有我方法术状态可显示。,No allied hex statuses to display.
+ui.battle_statuses.empty_enemy_characters,当前没有敌方角色状态可显示。,No enemy character statuses to display.
+ui.battle_statuses.empty_enemy_equipments,当前没有敌方装备状态可显示。,No enemy equipment statuses to display.
+ui.battle_statuses.empty_enemy_hexes,当前没有敌方法术状态可显示。,No enemy hex statuses to display.
+ui.battle_statuses.entity_face,第 {slot} 面：{name},Face {slot}: {name}
+ui.battle_statuses.no_status,当前没有状态。,No active statuses.
+ui.battle_statuses.remaining_infinite,无限,Infinite
+ui.battle_statuses.status_line,{name} x{stacks}，剩余：{remaining},"{name} x{stacks}, Remaining: {remaining}"
+ui.battle_result.current_gold,当前金币：{gold},Current Gold: {gold}
+ui.battle_result.defeat,失败,Defeat
+ui.battle_result.equipment,获得装备,Gain Equipment
+ui.battle_result.gold,获得金币,Gain Gold
+ui.battle_result.gold_reward,获得 {gold} 金币,Gain {gold} Gold
+ui.battle_result.hex,获得咒术,Gain Hex
+ui.battle_result.item,获得物品,Gain Item
+ui.battle_result.restart_test,重新测试,Restart Test
+ui.battle_result.victory,胜利,Victory
+ui.common.back_to_menu,返回主菜单,Back to Menu
+ui.common.close,关闭,Close
+ui.common.continue,继续,Continue
+ui.common.exit_game,退出游戏,Exit Game
+ui.confirm_switch.prompt,确认替换？,Confirm replacement?
+ui.frontdesk.choose_spell,选择法术,Choose Spell
+ui.frontdesk.choose_weapon,选择武器,Choose Weapon
+ui.frontdesk.recruit_friend,招募伙伴,Recruit Friend
+ui.frontdesk.title,前台,Frontdesk
+ui.hr.candidate_format,{name} 生命 {health} 倒计时 {countdown} 招募价 {cost},{name} HP {health} Countdown {countdown} Cost {cost}
+ui.hr.claim_reward,领取奖励,Claim Reward
+ui.hr.recruit_button_short,招募,Recruit
+ui.hr.status_format,{name}（{status}）,{name} ({status})
+ui.hr.tasks,任务,Tasks
+ui.hr_task.active_progress,{quest_name}：{progress},{quest_name}: {progress}
+ui.hr_task.claim,领取任务,Claim Task
+ui.hr_task.claim_failed,领取任务失败：{quest_id},Failed to claim task: {quest_id}
+ui.hr_task.claimed_body,已领取任务：{quest_name},Claimed task: {quest_name}
+ui.hr_task.claimed_title,领取成功,Claimed
+ui.hr_task.in_progress,进行中,In Progress
+ui.hr_task.no_available_tasks,当前没有可领取任务。,No available tasks.
+ui.hr_task.no_completed_task,当前没有可提交任务。,No completed task to submit.
+ui.hr_task.no_run_data,没有可用的局内数据。,No run data.
+ui.hr_task.progress_entry,{key}：{current}/{target},{key}: {current}/{target}
+ui.hr_task.progress_separator,/,/
+ui.hr_task.reward_claimed_body,{quest_name} 奖励已领取：{gold} 金币,{quest_name} reward claimed: {gold} gold
+ui.hr_task.reward_claimed_title,奖励已领取,Reward Claimed
+ui.hr_task.submit,提交任务,Submit Task
+ui.hr_task.submitted_body,已提交任务：{quest_name},Submitted task: {quest_name}
+ui.hr_task.submitted_title,提交成功,Submitted
+ui.hr_task.summary,可接 {offers} / 进行中 {active} / 可领奖 {claimable} / 下个任务 {next_offer} / 当前 {current_task},Offers {offers} / Active {active} / Claimable {claimable} / Next {next_offer} / Current {current_task}
+ui.hr_task.title,任务中心,Task Center
+ui.pantry_forge.choose_equipment,选择一件装备进行锻造。,Choose equipment to forge.
+ui.pantry_forge.choose_variant,为 {name} 选择一个变体。,Choose a variant for {name}.
+ui.pantry_forge.equipment,装备,Equipment
+ui.pantry_forge.no_forgeable_equipment,当前没有可锻造装备。,No forgeable equipment.
+ui.pantry_forge.no_variants,没有可用变体。,No variants available.
+ui.pantry_forge.points,锻造点：{count},Forge Points: {count}
+ui.pantry_forge.points_label,锻造点,Forge Points
+ui.pantry_forge.title,锻造,Forge
+ui.pantry_forge.variants,可选变体,Variants
+ui.pantry_rest.choose_character,选择一名角色休息。,Choose a character to rest.
+ui.pantry_rest.no_characters,当前没有可休息角色。,No characters available.
+ui.pantry_rest.title,休息,Rest
+ui.pantry_spell_reforge.hint,选择一个法术进行重铸。,Choose a spell to reforge.
+ui.pantry_spell_reforge.message,法术重铸功能开发中。,Spell reforge is not available yet.
+ui.pantry_spell_reforge.title,法术重铸,Spell Reforge
+ui.room.escape_marker,逃跑,Escape
+ui.sell.empty,当前没有可出售物品。,Nothing to sell.
+ui.sell.entry,"{name}
+售价 {price}",{name}\nSell for {price}
+ui.sell.hint,选择一个条目出售。,Choose an entry to sell.
+ui.sell.section_equipment,装备,Equipment
+ui.sell.section_hex,咒术,Hexes
+ui.sell.section_item,物品,Items
+ui.sell.title,出售,Sell
+ui.settings.percent_100,100%,100%
+ui.test_prep.choose_enemies,选择敌人,Choose Enemies
+ui.test_prep.choose_enemy_equipments,选择敌方装备,Choose Enemy Equipments
+ui.test_prep.choose_enemy_hexes,选择敌方法术,Choose Enemy Hexes
+ui.test_prep.choose_equipments,选择装备,Choose Equipments
+ui.test_prep.choose_friends,选择伙伴,Choose Friends
+ui.test_prep.choose_hexes,选择法术,Choose Hexes
+ui.test_prep.custom_dice,自定义骰子,Custom Dice
+ui.test_prep.go_to_battle,开始战斗,Go To Battle
+ui.test_prep.title,战斗测试准备,Test Battle Prep
+trait.ht003.name,haunt echo,haunt echo
+trait.ht003.desc,"After haunt resolves, deal 6 extra damage to each affected character if the caster has Stealth.","After haunt resolves, deal 6 extra damage to each affected character if the caster has Stealth."
+hex.fh028.name,踏步斩,step strike
+hex.fh028.desc,对前排敌人造成5点伤害。前进1。,Deal 5 damage to the front enemy. Advance 1.
+trait.et009.name,前线冲动,frontline urge
+trait.et009.desc,该敌人受到伤害后，前进1。,"After this enemy takes damage,  advance 1."
+trait.et010.name,冲动,impulsive
+trait.et010.desc,当该敌人的倒计时被减少时，前进1。,"When this enemy's countdown is reduced, advance 1."
+equipment.eq009.name,新鲜的草,Fresh Grass
+equipment.eq009.trait_desc.0,处于正面时，持有方的法术与特性恢复效果提升2。,"While face up, the holder's spell and trait healing is increased by 2."
+ui.interactive_battle_tutorial.prompt,在探索前，要先来一场教程吗？,"Before exploring, do you want to play a quick tutorial battle?"
+ui.interactive_battle_tutorial.accept,是的,Yes
+ui.interactive_battle_tutorial.decline,不了,No
+ui.interactive_battle_tutorial.continue,点击任意处继续,Click anywhere to continue
+ui.interactive_battle_tutorial.result_title,教程奖励,Tutorial Rewards
+ui.interactive_battle_tutorial.phase1.0,这是你的骰子盘。上方是你的骰子，下方是敌人的骰子。,"This is your dice tray. Your dice are on top, enemy dice are below."
+ui.interactive_battle_tutorial.phase1.1,角色骰会切换当前前排角色。,Character dice change who stands in the front row.
+ui.interactive_battle_tutorial.phase1.2,装备骰会切换当前生效的装备。,Equipment dice change the equipment currently supporting your team.
+ui.interactive_battle_tutorial.phase1.3,法术骰会切换倒数归零时施放的法术。,"Spell dice change the spell that will be cast when countdown reaches zero."
+ui.interactive_battle_tutorial.phase2.0,先点击你的角色骰来投掷。,Start by rolling your character die.
+ui.interactive_battle_tutorial.phase2.1,投出的角色会移动到前排，并成为主要受击目标。,"The rolled character moves to the front row and becomes the main target."
+ui.interactive_battle_tutorial.phase3.0,每次投掷，所有角色的倒数都会推进。,Every roll advances all countdowns.
+ui.interactive_battle_tutorial.phase3.1,倒数归零时，角色会施放当前朝上的法术。,"When countdown reaches zero, that character casts the current face-up spell."
+ui.interactive_battle_tutorial.phase4.0,自由投掷你的三颗骰子，让某个角色的倒数接近归零。,"Now freely roll your three dice and push a countdown close to zero."
+ui.interactive_battle_tutorial.phase4.1,装备骰投出后会立刻切换当前装备，并改变后续收益。,Rolling the equipment die immediately changes the current equipment.
+ui.interactive_battle_tutorial.phase4.2,法术骰投出后会切换即将施放的法术。,Rolling the spell die changes the spell that will be cast next.
+ui.interactive_battle_tutorial.phase5.0,有角色的倒数只剩 1 了，马上就会施法。,"A countdown is now at 1. That spell is about to fire."
+ui.interactive_battle_tutorial.phase5.1,你现在还能投法术骰，改变即将施放的法术。,"You can still roll the spell die now to change the upcoming spell."
+ui.interactive_battle_tutorial.phase6.0,倒数归零后，角色会施放当前法术。,"When countdown reaches zero, the character casts the face-up spell."
+ui.interactive_battle_tutorial.phase6.1,继续投掷并击败所有敌人。,Keep rolling and finish off the enemy team.
+ui.interactive_battle_tutorial.phase7.0,把鼠标移到骰子或角色上，可以查看更详细的信息。,"Hover dice and characters to inspect more detailed information."
+ui.interactive_battle_tutorial.phase8.0,你也可以投掷敌人的角色骰。先试一次。,"You can also roll the enemy character die. Try it once."
+ui.interactive_battle_tutorial.phase8.1,投掷敌人骰子同样会改变站位，并推进倒数。,"Enemy dice rolls also change positions and advance countdowns."
+ui.interactive_battle_tutorial.phase8.2,现在全部骰子都解锁了。按你的节奏完成这场战斗。,"All dice are unlocked now. Finish the battle at your own pace."
